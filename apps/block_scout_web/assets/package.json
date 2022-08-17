@@ -24,7 +24,7 @@
     "@walletconnect/web3-provider": "^1.0.8",
     "assert": "^2.0.0",
     "bignumber.js": "^9.0.2",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.2.0",
     "chart.js": "^3.7.0",
     "chartjs-adapter-luxon": "^1.1.0",
     "clipboard": "^2.0.9",
