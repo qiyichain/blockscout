@@ -6,6 +6,11 @@
 
 </div>
 
+
+[🔥🔥🔥Blockscout部署文档](./doc-zh/deploy.md)
+
+
+
 BlockScout provides a comprehensive, easy-to-use interface for users to view, confirm, and inspect transactions on EVM (Ethereum Virtual Machine) blockchains. This includes the POA Network, Gnosis Chain, Ethereum Classic and other **Ethereum testnets, private networks and sidechains**.
 
 See our [project documentation](https://docs.blockscout.com/) for detailed information and setup instructions.
