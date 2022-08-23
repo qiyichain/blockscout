@@ -15,6 +15,9 @@
 - Rust & Cargo （按照官方安装脚本安装最新版本即可）
 - gcc/g++/make/automake/libtool/...按照参考文档2安装即可
 
+修改postgresql存储的位置参考：
+> https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-postgresql-configuration_examples
+
 
 先设置必要的环境换变量，在运行mix相关命令
 
