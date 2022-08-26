@@ -1,4 +1,4 @@
-# blocksout 部署文档
+# blockscout 部署文档
 
 > - 参考文档1： https://mhxw.life/2021-10-05-blockscout-deployment-guide/
 > - 参考文档2：https://www.cnblogs.com/dahuige/p/15524428.html
