@@ -4,6 +4,13 @@
 > - 参考文档2：https://www.cnblogs.com/dahuige/p/15524428.html
 
 
+系统的文件句柄数限制要调大些（如果数据库和blockscout在一起）
+
+```shell
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+
 环境要求(特别注意版本！否则后面会报错)
 
 - 系统：CentOS7
@@ -70,5 +77,4 @@ nohup geth --gcmode=archive --syncmode=full --datadir /data/node3/data --ipcdisa
 生产环境，
 - 加一个nginx代理到blocksout服务
 - 对外使用https
-
 
