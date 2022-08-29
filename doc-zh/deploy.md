@@ -1,7 +1,14 @@
-# blocksout 部署文档
+# blockscout 部署文档
 
 > - 参考文档1： https://mhxw.life/2021-10-05-blockscout-deployment-guide/
 > - 参考文档2：https://www.cnblogs.com/dahuige/p/15524428.html
+
+
+系统的文件句柄数限制要调大些（如果数据库和blockscout在一起）
+
+```shell
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
 
 
 环境要求(特别注意版本！否则后面会报错)
@@ -14,6 +21,9 @@
 - Node.js 14.x.x 
 - Rust & Cargo （按照官方安装脚本安装最新版本即可）
 - gcc/g++/make/automake/libtool/...按照参考文档2安装即可
+
+修改postgresql存储的位置参考：
+> https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-postgresql-configuration_examples
 
 
 先设置必要的环境换变量，在运行mix相关命令
@@ -67,5 +77,4 @@ nohup geth --gcmode=archive --syncmode=full --datadir /data/node3/data --ipcdisa
 生产环境，
 - 加一个nginx代理到blocksout服务
 - 对外使用https
-
 
