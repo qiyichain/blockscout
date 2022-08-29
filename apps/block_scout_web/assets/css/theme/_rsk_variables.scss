@@ -7,7 +7,10 @@ $additional-font: #a1ded1;
 $tile-body-a-color: $secondary;
 $tile-type-block-color: $secondary;
 $tile-type-progress-bar-color: $secondary;
-a.tile-title { color: $secondary !important; }
+
+a.tile-title {
+  color: $secondary  !important;
+}
 
 // footer
 $footer-background-color: $primary;
@@ -46,21 +49,17 @@ $card-tab-active: $secondary;
 
 // ETC theme's idiosyncrasies
 .layout-container {
-    .navbar {
-      box-shadow: 0 0 30px 0 rgba(21, 53, 80, 0.12);
-    }
+  .navbar {
+    box-shadow: 0 0 30px 0 rgba(21, 53, 80, 0.12);
+  }
 
-    .dashboard-banner-container {
-      background-image: linear-gradient(
-        to bottom,
-        $dashboard-banner-gradient-start,
-        $dashboard-banner-gradient-end
-      );
-    }
-
-    .footer-logo {
-      filter: brightness(0) invert(1);
-    }
+  // .dashboard-banner-container {
+  //   background-image: linear-gradient(
+  //     to bottom,
+  //     $dashboard-banner-gradient-start,
+  //     $dashboard-banner-gradient-end
+  //   );
+  // }
 }
 
 // Badges

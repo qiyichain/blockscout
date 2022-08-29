@@ -41,7 +41,10 @@ $btn-contract-color: $tertiary;
 $tile-body-a-color: $tertiary;
 $tile-type-block-color: $tertiary;
 $tile-type-progress-bar-color: $tertiary;
-a.tile-title { color: $tertiary !important; }
+
+a.tile-title {
+  color: $tertiary  !important;
+}
 
 // card
 $card-background-1: $tertiary;
@@ -57,20 +60,17 @@ $card-tab-active: $tertiary;
   .dropdown-item.active,
   .dropdown-item:focus {
     background-color: rgba($tertiary, .1) !important;
-    color: $tertiary !important;
+    color: $tertiary  !important;
   }
 
-  .dashboard-banner-container {
-    background-image: linear-gradient(
-      to bottom,
-      $dashboard-banner-gradient-start,
-      $dashboard-banner-gradient-end
-    );
-  }
+  // .dashboard-banner-container {
+  //   // background-image: linear-gradient(
+  //   //   to bottom,
+  //   //   $dashboard-banner-gradient-start,
+  //   //   $dashboard-banner-gradient-end
+  //   // );
+  // }
 
-  .footer-logo {
-    filter: brightness(0) invert(1);
-  }
 }
 
 // Badges

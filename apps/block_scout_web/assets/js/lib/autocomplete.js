@@ -6,7 +6,7 @@ import { appendTokenIcon } from './token_icon'
 import { escapeHtml } from './utils'
 import xss from 'xss'
 
-const placeHolder = 'Search by address, token symbol, name, transaction hash, or block number'
+const placeHolder = '按地址、名称、交易哈希或区块号搜索'
 const dataSrc = async (query, id) => {
   try {
     // Loading placeholder text

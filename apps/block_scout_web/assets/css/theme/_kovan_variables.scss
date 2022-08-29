@@ -9,7 +9,7 @@ $footer-background-color: $primary;
 $footer-title-color: #fff;
 $footer-text-color: $additional-font;
 $footer-item-disc-color: $additional-font;
-.footer-logo { filter: brightness(0) invert(1); }
+
 
 // dashboard
 $dashboard-line-color-price: $tertiary; // price left border
@@ -29,7 +29,11 @@ $dashboard-banner-network-plain-container-background-color: #1a323b; // stats bg
 
 
 // navigation
-.navbar { box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12); } // header shadow
+.navbar {
+	box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12);
+}
+
+// header shadow
 $header-icon-border-color-hover: $tertiary;
 $header-icon-color-hover: $tertiary;
 
@@ -45,7 +49,10 @@ $btn-contract-color: $tertiary;
 $tile-body-a-color: $tertiary;
 $tile-type-block-color: $tertiary;
 $tile-type-progress-bar-color: $tertiary;
-a.tile-title { color: $tertiary !important; }
+
+a.tile-title {
+	color: $tertiary  !important;
+}
 
 // card
 $card-background-1: $tertiary;
@@ -53,22 +60,23 @@ $card-tab-active: $tertiary;
 
 // dropdown
 .dropdown-item {
-    &:hover,
-    &:active,
-    &.active {
-      background-color: rgba($tertiary, .1) !important;
-      color: $tertiary !important;
-    }
+
+	&:hover,
+	&:active,
+	&.active {
+		background-color: rgba($tertiary, .1) !important;
+		color: $tertiary  !important;
+	}
 }
 
 .layout-container {
-	.dashboard-banner-container {
-	  background-image: linear-gradient(
-	    to bottom,
-	    $dashboard-banner-gradient-start,
-	    $dashboard-banner-gradient-end
-	  );
-	}
+	// .dashboard-banner-container {
+	//   background-image: linear-gradient(
+	//     to bottom,
+	//     $dashboard-banner-gradient-start,
+	//     $dashboard-banner-gradient-end
+	//   );
+	// }
 }
 
 // Badges
@@ -81,4 +89,4 @@ $api-text-monospace-color: $tertiary;
 // Dark theme
 $dark-primary: #42e2d7;
 $dark-secondary: #1f857f;
-$dark-primary-alternate: #1f857f; 
+$dark-primary-alternate: #1f857f;

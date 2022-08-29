@@ -7,7 +7,10 @@ $additional-font: #a1ded1;
 $tile-body-a-color: $tertiary;
 $tile-type-block-color: $tertiary;
 $tile-type-progress-bar-color: $tertiary;
-a.tile-title { color: $tertiary !important; }
+
+a.tile-title {
+  color: $tertiary  !important;
+}
 
 // footer
 $footer-background-color: $primary;
@@ -16,9 +19,6 @@ $footer-text-color: $secondary;
 $footer-item-disc-color: $secondary;
 $footer-social-icon-color: $secondary;
 
-.footer-logo {
-  filter: brightness(0) invert(1);
-}
 
 // dashboard
 $dashboard-line-color-price: $tertiary; // price left border
@@ -36,7 +36,7 @@ $dashboard-banner-network-plain-container-background-color: $secondary; // stats
 // navigation
 $header-icon-border-color-hover: $primary; // top border on hover
 $header-icon-color-hover: $primary; // nav icon on hover
-$dropdown-menu-item-hover-color: $primary !default;
+$dropdown-menu-item-hover-color: $primary  !default;
 $dropdown-menu-item-hover-background: rgba($primary, .1) !default;
 
 // buttons
@@ -59,6 +59,7 @@ $dashboard-banner-network-plain-container-height: 150px;
   .dashboard-banner-container {
     height: auto !important;
   }
+
   .dashboard-banner-container::after {
     display: none;
   }
@@ -133,18 +134,22 @@ $dashboard-banner-network-plain-container-height: 150px;
         &.dashboard-banner-network-stats-item-1 {
           order: 1;
         }
+
         &.dashboard-banner-network-stats-item-2 {
           order: 2;
         }
+
         &.dashboard-banner-network-stats-item-3 {
           order: 4;
           margin-right: 0;
         }
+
         &.dashboard-banner-network-stats-item-4 {
           order: 3;
         }
       }
     }
+
     &:after {
       box-shadow: none;
     }
@@ -163,11 +168,13 @@ $dark-primary-alternate: #a96c55;
 
 .dark-theme-applied {
   .dashboard-banner-network-stats-value {
-    color: $dark-primary !important;
+    color: $dark-primary  !important;
   }
+
   .layout-container .dashboard-banner-container {
     background-color: #282945 !important;
   }
+
   .dashboard-banner-network-plain-container::after {
     box-shadow: none !important;
   }

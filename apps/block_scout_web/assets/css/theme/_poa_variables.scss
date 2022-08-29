@@ -1,5 +1,5 @@
 // general
-$primary: #5c34a2;
+$primary: #25D0D0;
 $secondary: #87e1a9;
 $tertiary: #bf9cff;
 $additional-font: #fff;
@@ -9,7 +9,7 @@ $footer-background-color: #3c226a;
 $footer-title-color: #fff;
 $footer-text-color: #bda6e7;
 $footer-item-disc-color: $secondary;
-.footer-logo { filter: brightness(0) invert(1); }
+
 
 // dashboard
 $dashboard-line-color-price: $tertiary; // price left border
@@ -29,8 +29,12 @@ $dashboard-banner-network-plain-container-background-color: #8258cd; // stats bg
 
 
 // navigation
-.navbar { box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12); } // header shadow
-$dropdown-menu-item-hover-color: $primary !default;
+.navbar {
+	box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12);
+}
+
+// header shadow
+$dropdown-menu-item-hover-color: $primary  !default;
 $dropdown-menu-item-hover-background: rgba($primary, .1) !default;
 $header-icon-color-hover: $primary;
 $header-icon-border-color-hover: $primary;
@@ -47,21 +51,22 @@ $btn-contract-color: $primary;
 $tile-body-a-color: $primary;
 $tile-type-block-color: $primary;
 $tile-type-progress-bar-color: $primary;
-a.tile-title { color: $primary !important; }
+
+a.tile-title {
+	color: $primary  !important;
+}
 
 // card
 $card-background-1: $primary;
 $card-tab-active: $primary;
 
-.layout-container {
-	.dashboard-banner-container {
-	  background-image: linear-gradient(
-	    to bottom,
-	    $dashboard-banner-gradient-start,
-	    $dashboard-banner-gradient-end
-	  );
-	}
-}
+// .layout-container {
+// 	.dashboard-banner-container {
+// 		background-image: linear-gradient(to bottom,
+// 				$dashboard-banner-gradient-start,
+// 				$dashboard-banner-gradient-end );
+// 	}
+// }
 
 // Badges
 $badge-neutral-color: $primary;
@@ -70,12 +75,12 @@ $api-text-monospace-color: $primary;
 
 // Tokens dropdown
 .token-balance-dropdown[aria-labelledby="dropdown-tokens"] {
-  .dropdown-items .dropdown-item:hover {
-    color: $primary !important;
-  }
+	.dropdown-items .dropdown-item:hover {
+		color: $primary  !important;
+	}
 }
 
 // Dark theme
 $dark-primary: #9b62ff;
 $dark-secondary: #87e1a9;
-$dark-primary-alternate: #7e50d0; 
+$dark-primary-alternate: #7e50d0;
