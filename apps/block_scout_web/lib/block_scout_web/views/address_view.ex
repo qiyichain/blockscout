@@ -99,9 +99,9 @@ defmodule BlockScoutWeb.AddressView do
 
   def address_title(%Address{} = address) do
     if contract?(address) do
-      gettext("Contract Address")
+      gettext("合约地址")
     else
-      gettext("Address")
+      gettext("地址")
     end
   end
 
@@ -357,19 +357,19 @@ defmodule BlockScoutWeb.AddressView do
     |> tab_name()
   end
 
-  defp tab_name(["tokens"]), do: gettext("Tokens")
-  defp tab_name(["internal-transactions"]), do: gettext("Internal Transactions")
-  defp tab_name(["transactions"]), do: gettext("Transactions")
-  defp tab_name(["token-transfers"]), do: gettext("Token Transfers")
-  defp tab_name(["contracts"]), do: gettext("Code")
-  defp tab_name(["decompiled-contracts"]), do: gettext("Decompiled Code")
-  defp tab_name(["read-contract"]), do: gettext("Read Contract")
-  defp tab_name(["read-proxy"]), do: gettext("Read Proxy")
-  defp tab_name(["write-contract"]), do: gettext("Write Contract")
-  defp tab_name(["write-proxy"]), do: gettext("Write Proxy")
-  defp tab_name(["coin-balances"]), do: gettext("Coin Balance History")
-  defp tab_name(["validations"]), do: gettext("Blocks Validated")
-  defp tab_name(["logs"]), do: gettext("Logs")
+  defp tab_name(["tokens"]), do: gettext("通证")
+  defp tab_name(["internal-transactions"]), do: gettext("内部交易")
+  defp tab_name(["transactions"]), do: gettext("交易")
+  defp tab_name(["token-transfers"]), do: gettext("通证转移")
+  defp tab_name(["contracts"]), do: gettext("代码")
+  defp tab_name(["decompiled-contracts"]), do: gettext("反编译代码")
+  defp tab_name(["read-contract"]), do: gettext("合约读取")
+  defp tab_name(["read-proxy"]), do: gettext("读取代理")
+  defp tab_name(["write-contract"]), do: gettext("写合约")
+  defp tab_name(["write-proxy"]), do: gettext("写代理")
+  defp tab_name(["coin-balances"]), do: gettext("代币历史余额")
+  defp tab_name(["validations"]), do: gettext("区块验证")
+  defp tab_name(["logs"]), do: gettext("日志")
 
   def short_hash(%Address{hash: hash}) do
     <<

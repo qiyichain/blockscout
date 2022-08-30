@@ -59,9 +59,11 @@
           </span>
         </button>
 
+        <!--
         <div data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
         </div>
+        -->
 
         <div class="transaction-bottom-panel">
           <%= render BlockScoutWeb.CommonComponentsView, "_csv_export_button.html", address: Address.checksum(@address.hash), type: "token-transfers", conn: @conn %>

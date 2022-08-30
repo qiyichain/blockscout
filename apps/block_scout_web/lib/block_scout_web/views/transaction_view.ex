@@ -16,10 +16,10 @@ defmodule BlockScoutWeb.TransactionView do
 
   @tabs ["token-transfers", "internal-transactions", "logs", "raw-trace"]
 
-  @token_burning_title "Token Burning"
-  @token_minting_title "Token Minting"
-  @token_transfer_title "Token Transfer"
-  @token_creation_title "Token Creation"
+  @token_burning_title "销毁通证"
+  @token_minting_title "NFT铸造"
+  @token_transfer_title "通证转移"
+  @token_creation_title "创建通证"
 
   @token_burning_type :token_burning
   @token_minting_type :token_minting
@@ -338,19 +338,19 @@ defmodule BlockScoutWeb.TransactionView do
 
   def formatted_status(status) do
     case status do
-      :pending -> gettext("Unconfirmed")
-      _ -> gettext("Confirmed")
+      :pending -> gettext("未确认")
+      _ -> gettext("已确认")
     end
   end
 
   def formatted_result(status) do
     case status do
       :pending -> gettext("Pending")
-      :awaiting_internal_transactions -> gettext("(Awaiting internal transactions for status)")
-      :success -> gettext("Success")
-      {:error, :awaiting_internal_transactions} -> gettext("Error: (Awaiting internal transactions for reason)")
+      :awaiting_internal_transactions -> gettext("(等待内部事务的状态)")
+      :success -> gettext("成功")
+      {:error, :awaiting_internal_transactions} -> gettext("错误: (等待内部交易的原因)")
       # The pool of possible error reasons is unknown or even if it is enumerable, so we can't translate them
-      {:error, reason} when is_binary(reason) -> gettext("Error: %{reason}", reason: reason)
+      {:error, reason} when is_binary(reason) -> gettext("错误: %{reason}", reason: reason)
     end
   end
 
@@ -451,13 +451,13 @@ defmodule BlockScoutWeb.TransactionView do
         end
 
       contract_creation?(transaction) ->
-        gettext("Contract Creation")
+        gettext("创建合约")
 
       involves_contract?(transaction) ->
-        gettext("Contract Call")
+        gettext("合约调用")
 
       true ->
-        gettext("Transaction")
+        gettext("交易")
     end
   end
 
@@ -508,10 +508,10 @@ defmodule BlockScoutWeb.TransactionView do
     |> tab_name()
   end
 
-  defp tab_name(["token-transfers"]), do: gettext("Token Transfers")
-  defp tab_name(["internal-transactions"]), do: gettext("Internal Transactions")
-  defp tab_name(["logs"]), do: gettext("Logs")
-  defp tab_name(["raw-trace"]), do: gettext("Raw Trace")
+  defp tab_name(["token-transfers"]), do: gettext("通证转移")
+  defp tab_name(["internal-transactions"]), do: gettext("内部交易")
+  defp tab_name(["logs"]), do: gettext("日志")
+  defp tab_name(["raw-trace"]), do: gettext("原始跟踪")
 
   defp get_transaction_type_from_token_transfers(token_transfers) do
     token_transfers_types =

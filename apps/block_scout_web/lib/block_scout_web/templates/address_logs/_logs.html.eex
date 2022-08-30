@@ -3,7 +3,7 @@
     <%= case decoded_result do %>
       <%= {:error, :contract_not_verified, _cadidates} -> %>
         <div class="alert alert-info">
-        <%= gettext "To see accurate decoded input data, the contract must be verified." %>
+        <%= gettext "要查看准确的解码输入数据，必须验证合约" %>
         <%= case @log.transaction do %>
           <% %{to_address: %{hash: hash}} -> %>
             <% path = address_verify_contract_path(@conn, :new, hash) %>

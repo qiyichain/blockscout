@@ -4,7 +4,6 @@
   <% is_proxy = BlockScoutWeb.AddressView.smart_contract_is_proxy?(@address) %>
 
   <%= render BlockScoutWeb.AddressView, "overview.html", address: @address, is_proxy: is_proxy, conn: @conn, exchange_rate: @exchange_rate, coin_balance_status: @coin_balance_status, counters_path: @counters_path %>
-
   <section>
     <div class="card">
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
@@ -41,7 +40,6 @@
         </div>
 
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
-
     </div>
     <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/address-coin-balances.js") %>"></script>
   </section>

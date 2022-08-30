@@ -27,15 +27,15 @@
               <%= nil %>
           <% end %>
           <h1 class="card-title lg-card-title mb-2-desktop">
-            <div class="title-with-label"><%= address_title(@address) %> <%= gettext "Details" %></div>
+            <div class="title-with-label"><%= address_title(@address) %> <%= gettext "详情" %></div>
             <!-- buttons -->
             <span class="overview-title-buttons float-right">
               <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                       id: "tx-raw-input",
                       additional_classes: ["overview-title-item"],
                       clipboard_text: @address,
-                      aria_label: gettext("Copy Address"),
-                      title: gettext("Copy Address") %>
+                      aria_label: gettext("复制地址"),
+                      title: gettext("复制地址") %>
               <%= render BlockScoutWeb.CommonComponentsView, "_btn_qr_code.html" %>
               <%= if validator_metadata = primary_validator_metadata(@address) do %>
                 <span
@@ -44,11 +44,11 @@
                   data-toggle="modal"
                 >
                   <span
-                    aria-label='<%= gettext("Show Validator Info") %>'
+                    aria-label='<%= gettext("显示验证人信息") %>'
                     class="btn-address-card-icon"
                     data-placement="top"
                     data-toggle="tooltip"
-                    title='<%= gettext("Validator Info") %>'
+                    title='<%= gettext("验证人信息") %>'
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10">
                       <path fill-rule="evenodd" d="M19 6h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm0-4h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM9 10H1a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2h.184A2.962 2.962 0 0 1 2 4V3a3 3 0 1 1 6 0v1c0 .353-.072.686-.184 1H8a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1zM6 3a1 1 0 0 0-2 0v1a1 1 0 0 0 2 0V3zm2 4H2v1h6V7zm5 1h6a1 1 0 0 1 0 2h-6a1 1 0 0 1 0-2z"/>
@@ -69,8 +69,8 @@
               <dl class="row">
                 <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
                   <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-                  text: gettext("Token name and symbol.") %>
-                  <%= gettext("Token") %>
+                  text: gettext("令牌名称和符号") %>
+                  <%= gettext("通证") %>
                 </dt>
                 <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_token">
                   <%= link(
@@ -89,8 +89,8 @@
                 <dl class="row">
                   <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
                     <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-                    text: gettext("The name found in the source code of the Contract.") %>
-                    <%= gettext("Contract Name") %>
+                    text: gettext("合同源代码中的名称") %>
+                    <%= gettext("合约名称") %>
                   </dt>
                   <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_contract">
                     <%= short_contract_name(address_name, 30) %>
@@ -100,8 +100,8 @@
                 <dl class="row">
                   <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
                     <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-                    text: gettext("The name of the validator.") %>
-                    <%= gettext("Validator Name") %>
+                    text: gettext("验证者名称") %>
+                    <%= gettext("验证者名称") %>
                   </dt>
                   <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_contract">
                     <%= short_contract_name(address_name, 30) %>
@@ -116,8 +116,8 @@
             <dl class="row">
               <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
                 <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-                text: gettext("Transactions and address of creation.") %>
-                <%= gettext("Creator") %>
+                text: gettext("交易和创建地址") %>
+                <%= gettext("创作者") %>
               </dt>
               <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_contract_creator">
                 <%= if from_address_hash do %>
@@ -145,8 +145,8 @@
             <dl class="row">
               <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
                 <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-                text: gettext("Implementation address of the proxy contract.") %>
-                <%= gettext("Implementation") %>
+                text: gettext("代理合约的执行地址") %>
+                <%= gettext("执行") %>
               </dt>
               <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_contract_implementation">
                 <%= link(
@@ -162,8 +162,8 @@
           <dl class="row">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-              text: gettext("Address balance in") <> " " <> Explorer.coin_name() <> " " <> gettext("doesn't include ERC20, ERC721, ERC1155 tokens).") %>
-              <%= gettext("Balance") %>
+              text: gettext("地址余额") <> " " <> Explorer.coin_name() <> " " <> gettext("不包括ERC20、ERC721、ERC1155代币).") %>
+              <%= gettext("余额") %>
             </dt>
             <dd data-selector="current-coin-balance" class="col-sm-8 col-md-8 col-lg-9" data-test="address_balance">
               <%= balance(@address) %>
@@ -176,7 +176,7 @@
                     data-placement="top"
                     data-toggle="tooltip"
                     data-html="true"
-                    title='<%= "@ " <> usd_value <> "/" <> gettext("Ether") %>'  
+                    title='<%= "@ " <> usd_value <> "/" %>'  
                   >
                   </span>)
                 </span>
@@ -187,8 +187,8 @@
           <dl class="row" data-test="outside_of_dropdown">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-              text: gettext("All tokens in the account and total value.") %>
-              <%= gettext("Tokens") %>
+              text: gettext("账户中的所有代币和总价值。") %>
+              <%= gettext("通证") %>
             </dt>
             <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_tokens" data-selector="balance-card">
               <%= render BlockScoutWeb.AddressView, "_balance_dropdown.html", conn: @conn, address: @address %>
@@ -199,23 +199,23 @@
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
               text: gettext("Number of transactions related to this address.") %>
-              <%= gettext("Transactions") %>
+              <%= gettext("交易") %>
             </dt>
             <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_transaction_count">
               <%= if @conn.request_path |> String.contains?("/transactions") do %>
                 <a href="#txs" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transaction-count">
                   <%= if @address.transactions_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= gettext("Transactions") %>
+                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= gettext("交易") %>
                   <% else %>
-                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transactions...") %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("获取交易...") %>
                   <% end %>
                 </a>
               <% else %>
                 <a href="<%= AccessHelpers.get_path(@conn, :address_transaction_path, :index, @address.hash)%>#txs" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transaction-count">
                   <%= if @address.token_transfers_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= gettext("Transactions") %>
+                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= gettext("交易") %>
                   <% else %>
-                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transactions...") %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("获取交易...") %>
                   <% end %>
                 </a>
               <% end %>
@@ -226,23 +226,23 @@
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
               text: gettext("Number of transfers to/from this address.") %>
-              <%= gettext("Transfers") %>
+              <%= gettext("转移") %>
             </dt>
             <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_transfer_count">
               <%= if @conn.request_path |> String.contains?("/token-transfers") do %>
                 <a href="#transfers" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transfer-count">
                   <%= if @address.token_transfers_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%= gettext("Transfers") %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%= gettext("转移") %>
                   <% else %>
-                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("获取转移...") %>
                   <% end %>
                 </a>
               <% else %>
                 <a href="<%= AccessHelpers.get_path(@conn, :address_token_transfers_path, :index, @address.hash)%>#transfers" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transfer-count">
                   <%= if @address.token_transfers_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%= gettext("Transfers") %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%= gettext("转移") %>
                   <% else %>
-                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("转移...") %>
                   <% end %>
                 </a>
               <% end %>
@@ -252,15 +252,15 @@
           <dl class="row address-gas-used-item">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-              text: gettext("Gas used by the address.") %>
-              <%= gettext("Gas Used") %>
+              text: gettext("地址使用的GAS") %>
+              <%= gettext("使用的GAS") %>
             </dt>
             <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_gas_used">
               <span data-selector="gas-usage-count">
                 <%= if @address.gas_used do %>
                   <%= Number.Delimit.number_to_delimited(@address.gas_used, precision: 0) %>
                 <% else %>
-                  <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching gas used...") %>
+                  <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("获取使用的GAS...") %>
                 <% end %>
               </span>
             </dd>
@@ -271,7 +271,7 @@
               <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
                 <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
                 text: gettext("Block number in which the address was updated.") %>
-                <%= gettext("Last Balance Update") %>
+                <%= gettext("最后余额更新") %>
               </dt>
               <dd data-selector="last-balance-update" class="col-sm-8 col-md-8 col-lg-9" data-test="address_last_balance_update">
                 <%= link(
@@ -283,12 +283,12 @@
             </dl>
           <% end %>
           <div data-last-balance-update="<%= @address.fetched_coin_balance_block_number %>"></div>
-          <!-- Blocks Validated -->
+          <!-- 块验证 -->
           <dl class="row address-validation-count-item" style="display: none;">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-              text: gettext("Number of blocks validated by this validator.") %>
-              <%= gettext("Blocks Validated") %>
+              text: gettext("此验证器验证的块数") %>
+              <%= gettext("块验证") %>
             </dt>
             <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_blocks_validated">
               <span data-selector="validation-count">

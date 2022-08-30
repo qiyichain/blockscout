@@ -2,22 +2,12 @@
   <% decoded_result = decode(@log, @transaction) %>
   <%= case decoded_result do %>
     <%= {:error, :contract_not_verified, _cadidates} -> %>
-      <div class="alert alert-info">
-      <%= gettext "To see accurate decoded input data, the contract must be verified." %>
-      <%= case @log do %>
-        <% %{address_hash: %Explorer.Chain.Hash{} = address_hash} -> %>
-          <% path = address_verify_contract_path(@conn, :new, address_hash) %>
-          <%= gettext "Verify the contract " %><a href="<%= path %>"><%= gettext "here" %></a>
-        <% _ -> %>
-          <%= nil %>
-      <% end %>
-      </div>
     <% _ -> %>
       <%= nil %>
   <% end %>
 
   <dl class="row">
-    <dt class="col-lg-2"> <%= gettext "Address" %> </dt>
+    <dt class="col-lg-2"> <%= gettext "地址" %> </dt>
     <dd class="col-lg-10">
       <h3 class="logs-hash">
         <% name = implementation_name(@log.address) || primary_name(@log.address)%>
@@ -88,7 +78,7 @@
           <%= nil %>
       <% end %>
 
-    <dt class="col-lg-2"><%= gettext "Topics" %></dt>
+    <dt class="col-lg-2"><%= gettext "主题" %></dt>
     <dd class="col-lg-10">
       <div class="raw-transaction-log-topics">
         <%= unless is_nil(@log.first_topic) do %>
@@ -118,7 +108,7 @@
       </div>
     </dd>
     <dt class="col-lg-2">
-      <%= gettext "Data" %>
+      <%= gettext "数据" %>
     </dt>
     <dd class="col-lg-10">
       <%= unless is_nil(@log.data) do %>
@@ -128,7 +118,7 @@
       <% end %>
     </dd>
     <dt class="col-md-2">
-      <%= gettext "Log Index" %>
+      <%= gettext "日志索引" %>
     </dt>
     <dd class="col-md-10">
       <div class="text-dark raw-transaction-log-index">

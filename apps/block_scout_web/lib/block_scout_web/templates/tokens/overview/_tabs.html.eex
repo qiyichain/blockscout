@@ -2,13 +2,13 @@
 <% is_proxy = BlockScoutWeb.Tokens.OverviewView.smart_contract_is_proxy?(@token) %>
 <div class="card-tabs js-card-tabs">
   <%= link(
-        gettext("Token Transfers"),
+        gettext("通证转移"),
         class: "card-tab #{tab_status("token-transfers", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :token_path, :show, @token.contract_address_hash)
       )
     %>
   <%= link(
-        gettext("Token Holders"),
+        gettext("通证持有者"),
         class: "card-tab #{tab_status("token-holders", @conn.request_path)}",
         "data-test": "token_holders_tab",
         to: AccessHelpers.get_path(@conn, :token_holder_path, :index, address_hash)
@@ -16,7 +16,7 @@
     %>
   <%= if display_inventory?(@token) do %>
     <%= link(
-          gettext("Inventory"),
+          gettext("存货"),
           class: "card-tab #{tab_status("inventory", @conn.request_path)}",
           to: AccessHelpers.get_path(@conn, :token_inventory_path, :index, address_hash)
         )
@@ -24,28 +24,28 @@
   <% end %>
   <%= if smart_contract_with_read_only_functions?(@token) do %>
     <%= link(
-        gettext("Read Contract"),
+        gettext("读合约"),
         to: AccessHelpers.get_path(@conn, :token_read_contract_path, :index, address_hash),
         class: "card-tab #{tab_status("read-contract", @conn.request_path)}")
       %>
   <% end %>
   <%= if smart_contract_with_write_functions?(@token) do %>
     <%= link(
-        gettext("Write Contract"),
+        gettext("写合约"),
         to: AccessHelpers.get_path(@conn, :token_write_contract_path, :index, address_hash),
         class: "card-tab #{tab_status("write-contract", @conn.request_path)}")
         %>
   <% end %>
   <%= if is_proxy do %>
     <%= link(
-        gettext("Read Proxy"),
+        gettext("读取数据代理"),
         to: AccessHelpers.get_path(@conn, :token_read_proxy_path, :index, address_hash),
         class: "card-tab #{tab_status("read-proxy", @conn.request_path)}")
         %>
   <% end %>
   <%= if smart_contract_with_write_functions?(@token) && is_proxy  do %>
     <%= link(
-        gettext("Write Proxy"),
+        gettext("写数据代理"),
         to: AccessHelpers.get_path(@conn, :token_write_proxy_path, :index, address_hash),
         class: "card-tab #{tab_status("write-proxy", @conn.request_path)}")
         %>

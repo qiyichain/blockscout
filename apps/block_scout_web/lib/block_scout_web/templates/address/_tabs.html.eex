@@ -4,13 +4,13 @@
 <% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
 <div id="address-tabs" class="card-tabs js-card-tabs">
   <%= link(
-        gettext("Transactions"),
+        gettext("交易"),
         class: "card-tab #{tab_status("transactions", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :address_transaction_path, :index, @address.hash)
       ) %>
   <%= if Chain.check_if_token_transfers_at_address(@address.hash) do %>
     <%= link(
-        gettext("Token Transfers"),
+        gettext("通证转移"),
         class: "card-tab #{tab_status("token-transfers", @conn.request_path)}",
         "data-test": "token_transfers_tab_link",
         to: AccessHelpers.get_path(@conn, :address_token_transfers_path, :index, @address.hash)
@@ -18,34 +18,34 @@
   <% end %>
   <%= if Chain.check_if_tokens_at_address(@address.hash) do %>
   <%= link(
-        gettext("Tokens"),
+        gettext("通证"),
         class: "card-tab #{tab_status("tokens", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :address_token_path, :index, @address.hash),
         "data-test": "tokens_tab_link"
       ) %>
   <% end %>
   <%= link(
-        gettext("Internal Transactions"),
+        gettext("内部交易"),
         class: "card-tab #{tab_status("internal-transactions", @conn.request_path)}",
         "data-test": "internal_transactions_tab_link",
         to: AccessHelpers.get_path(@conn, :address_internal_transaction_path, :index, @address.hash)
       ) %>
   <%= link(
-        gettext("Coin Balance History"),
+        gettext("硬币余额历史"),
         class: "card-tab #{tab_status("coin-balances", @conn.request_path)}",
         "data-test": "coin_balance_tab_link",
         to: AccessHelpers.get_path(@conn, :address_coin_balance_path, :index, @address.hash)
       ) %>
   <%= if Chain.check_if_logs_at_address(@address.hash) do %>
     <%= link(
-        gettext("Logs"),
+        gettext("日志"),
         class: "card-tab #{tab_status("logs", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :address_logs_path, :index, @address.hash)
         ) %>
   <% end %>
   <%= if Chain.check_if_validated_blocks_at_address(@address.hash) do %>
     <%= link(
-      gettext("Blocks Validated"),
+      gettext("块验证"),
       class: "card-tab #{tab_status("validations", @conn.request_path)}",
       "data-test": "validations_tab_link",
       to: AccessHelpers.get_path(@conn, :address_validation_path, :index, @address.hash)
@@ -55,7 +55,7 @@
     <%= link(
         to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash),
         class: "card-tab #{tab_status("contracts", @conn.request_path)}") do %>
-        <%= gettext("Code") %>
+        <%= gettext("代码") %>
       <%= if smart_contract_verified?(@address) do %>
         <%= cond do %>
           <% Enum.member?(dark_forest_addresses_list, current_address) -> %>
@@ -72,34 +72,34 @@
     <%= link(
         to: AccessHelpers.get_path(@conn, :address_decompiled_contract_path, :index, @address.hash),
         class: "card-tab #{tab_status("decompiled-contracts", @conn.request_path)}") do %>
-        <%= gettext("Decompiled code") %>
+        <%= gettext("反编译代码") %>
         <i class="fa-regular fa-check-circle"></i>
     <% end %>
   <% end %>
   <%= if smart_contract_with_read_only_functions?(@address) do %>
     <%= link(
-        gettext("Read Contract"),
+        gettext("读取合约"),
         to: AccessHelpers.get_path(@conn, :address_read_contract_path, :index, @address.hash),
         class: "card-tab #{tab_status("read-contract", @conn.request_path)}")
         %>
   <% end %>
   <%= if @is_proxy do %>
     <%= link(
-        gettext("Read Proxy"),
+        gettext("读取代理"),
         to: AccessHelpers.get_path(@conn, :address_read_proxy_path, :index, @address.hash),
         class: "card-tab #{tab_status("read-proxy", @conn.request_path)}")
         %>
   <% end %>
   <%= if smart_contract_with_write_functions?(@address) do %>
     <%= link(
-        gettext("Write Contract"),
+        gettext("写合约"),
         to: AccessHelpers.get_path(@conn, :address_write_contract_path, :index, @address.hash),
         class: "card-tab #{tab_status("write-contract", @conn.request_path)}")
         %>
   <% end %>
   <%= if smart_contract_with_write_functions?(@address) && @is_proxy  do %>
     <%= link(
-        gettext("Write Proxy"),
+        gettext("写代理"),
         to: AccessHelpers.get_path(@conn, :address_write_proxy_path, :index, @address.hash),
         class: "card-tab #{tab_status("write-proxy", @conn.request_path)}")
         %>

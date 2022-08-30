@@ -192,6 +192,6 @@ defmodule BlockScoutWeb.Tokens.Instance.OverviewView do
     end
   end
 
-  defp tab_name(["token-transfers"]), do: gettext("Token Transfers")
-  defp tab_name(["metadata"]), do: gettext("Metadata")
+  defp tab_name(["token-transfers"]), do: gettext("通证转移")
+  defp tab_name(["metadata"]), do: gettext("元数据")
 end

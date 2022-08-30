@@ -9,7 +9,3 @@ data-pagination-container>
         <li class="page-item"><form input-page-number-form><input class="page-number" id="page-number" type=text size=3><input class="d-none" type=submit input-page-number></form></li>
     </ul>
 </div>
-<%= if assigns[:showing_limit] do %>
-    <div class="limit mrm18" >(<%= gettext("Only the first")%> <%= assigns[:showing_limit] |> BlockScoutWeb.Cldr.Number.to_string! %> <%= gettext("elements are displayed")%>)
-    </div>
-<% end %>

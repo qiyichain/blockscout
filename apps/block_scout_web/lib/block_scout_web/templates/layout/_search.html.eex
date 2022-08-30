@@ -1,6 +1,6 @@
 <!-- Search navbar -->
-<div class="search-form d-lg-flex d-inline-block <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
-	<div class="input-group" style="width: 100%;" title='<%= gettext("Search by address, token symbol name, transaction hash, or block number") %>'>
+<div class="search-form d-lg-flex <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
+	<div class="input-group" style="width: 100%;" title='<%= gettext("按地址、代币符号名称、交易哈希或区块号搜索") %>'>
 		<div class="form-control search-control me auto <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
 			<input
 				id="<%= @id %>"
@@ -24,7 +24,7 @@
 			data-placement="bottom"
 			data-toggle="tooltip"
 			title=""
-			data-original-title='<%= gettext("Press / and focus will be moved to the search field") %>'
+			data-original-title='<%= gettext("按 / 焦点将移至搜索栏") %>'
 			data-template="<div class='tooltip tooltip-pale-color' role='tooltip'><div class='arrow'></div><div class='tooltip-inner'></div></div>"
 			>
 			/

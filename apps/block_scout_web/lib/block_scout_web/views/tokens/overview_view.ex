@@ -36,10 +36,10 @@ defmodule BlockScoutWeb.Tokens.OverviewView do
     |> tab_name()
   end
 
-  defp tab_name(["token-transfers"]), do: gettext("Token Transfers")
-  defp tab_name(["token-holders"]), do: gettext("Token Holders")
-  defp tab_name(["read-contract"]), do: gettext("Read Contract")
-  defp tab_name(["inventory"]), do: gettext("Inventory")
+  defp tab_name(["token-transfers"]), do: gettext("通证转移")
+  defp tab_name(["token-holders"]), do: gettext("通证持有者")
+  defp tab_name(["read-contract"]), do: gettext("合约读取")
+  defp tab_name(["inventory"]), do: gettext("存货")
 
   def display_inventory?(%Token{type: "ERC-721"}), do: true
   def display_inventory?(%Token{type: "ERC-1155"}), do: true

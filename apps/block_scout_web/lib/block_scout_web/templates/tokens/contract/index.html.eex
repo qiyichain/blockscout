@@ -6,7 +6,6 @@
     counters_path: @counters_path,
     conn: @conn
   ) %>
-
   <section>
     <div class="card">
       <%= render OverviewView, "_tabs.html", assigns %>

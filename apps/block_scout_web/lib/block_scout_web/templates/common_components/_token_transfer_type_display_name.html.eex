@@ -1,12 +1,12 @@
 <%= case @type do %>
     <% :token_burning -> %>
-    <%= gettext("Token Burning") %>
+    <%= gettext("销毁通证") %>
     <% :token_minting -> %>
-    <%= gettext("Token Minting") %>
+    <%= gettext("增发通证") %>
     <% :token_spawning -> %>
-    <%= gettext("Token Creation") %>
+    <%= gettext("创建通证") %>
     <% :token_transfer -> %>
-    <%= gettext("Token Transfer") %>
+    <%= gettext("通证转移") %>
     <% _ -> %>
-    <%= gettext("Token Transfer") %>
+    <%= gettext("通证转移") %>
 <% end %>

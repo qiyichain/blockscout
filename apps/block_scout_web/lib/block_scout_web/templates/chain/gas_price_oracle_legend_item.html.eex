@@ -1,6 +1,6 @@
 <div class="dashboard-banner-chart-legend-item gas-price-oracle">
     <span class="dashboard-banner-chart-legend-label">
-    <%= gettext "Gas tracker" %>
+    <%= gettext "Gas 追踪" %>
     </span>
     <div class="dashboard-banner-chart-legend-value-container">
         <% gas_prices_from_oracle = gas_prices() %>
@@ -15,15 +15,14 @@
                 data-html="true"
                 data-template="<div class='tooltip tooltip-inversed-color tooltip-gas-tracker' role='tooltip'><div class='arrow'></div><div class='tooltip-inner'></div></div>"
                 title="
-                <div class='custom-tooltip header'><%= gettext "Gas tracker" %></div>
+                <div class='custom-tooltip header'><%= gettext "Gas 追踪" %></div>
                 <div>
-                    <div class='custom-tooltip description left d-flex'><span><%= gettext "Slow" %></span><span class='custom-tooltip description right'><%= gas_prices_from_oracle["slow"] %> <%= gettext "Gwei" %></span></div>
-                    <div class='custom-tooltip description left d-flex'><span><%= gettext "Average" %></span><span class='custom-tooltip description right'><%= gas_prices_from_oracle["average"] %> <%= gettext "Gwei" %></span></div>
-                    <div class='custom-tooltip description left d-flex'><span><%= gettext "Fast" %></span><span class='custom-tooltip description right'><%= gas_prices_from_oracle["fast"] %> <%= gettext "Gwei" %></span></div>
+                    <div class='custom-tooltip description left d-flex'><span><%= gettext "慢" %></span><span class='custom-tooltip description right'><%= gas_prices_from_oracle["slow"] %> <%= gettext "Gwei" %></span></div>
+                    <div class='custom-tooltip description left d-flex'><span><%= gettext "平均" %></span><span class='custom-tooltip description right'><%= gas_prices_from_oracle["average"] %> <%= gettext "Gwei" %></span></div>
+                    <div class='custom-tooltip description left d-flex'><span><%= gettext "快" %></span><span class='custom-tooltip description right'><%= gas_prices_from_oracle["fast"] %> <%= gettext "Gwei" %></span></div>
                 </div>
                 "
                 >
-                <span style="display: inline-block; height: 20px; width: 12px;" class="fontawesome-icon info-circle ml-1"></span>
                 </span>
             </div>
             </div>

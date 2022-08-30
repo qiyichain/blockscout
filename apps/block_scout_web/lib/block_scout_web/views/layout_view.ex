@@ -9,11 +9,11 @@ defmodule BlockScoutWeb.LayoutView do
 
   @default_other_networks [
     %{
-      title: "POA",
+      title: "POA_Copy",
       url: "https://blockscout.com/poa/core"
     },
     %{
-      title: "Sokol",
+      title: "QiyiChain",
       url: "https://blockscout.com/poa/sokol",
       test_net?: true
     },
@@ -48,11 +48,11 @@ defmodule BlockScoutWeb.LayoutView do
   end
 
   def subnetwork_title do
-    Keyword.get(application_config(), :subnetwork) || "Sokol"
+    Keyword.get(application_config(), :subnetwork) || "奇异链"
   end
 
   def network_title do
-    Keyword.get(application_config(), :network) || "POA"
+    Keyword.get(application_config(), :network) || ""
   end
 
   defp application_config do

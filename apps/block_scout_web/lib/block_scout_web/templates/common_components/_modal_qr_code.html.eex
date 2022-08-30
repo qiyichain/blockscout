@@ -2,8 +2,8 @@
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="qrModalLabel"><%= gettext "QR Code" %></h2>
-        <button type="button" class="close" data-dismiss="modal" aria-label="<%= gettext("Close") %>">
+        <h2 class="modal-title" id="qrModalLabel"><%= gettext "二维码" %></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="<%= gettext("关闭") %>">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -11,7 +11,7 @@
         <img src="data:image/png;base64, <%= @qr_code %>" class="qr-code" alt="qr_code" title="<%= @title %>" />
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal"><%= gettext "Close" %></button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"><%= gettext "关闭" %></button>
       </div>
     </div>
   </div>

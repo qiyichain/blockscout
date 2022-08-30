@@ -6,16 +6,16 @@
     <div class="pl-5 col-md-2 d-flex flex-column align-items-left justify-content-start justify-content-lg-center">
       <!-- substitute the span with <img class="tile-image" /> to token with images -->
       <%= if is_unique do%>
-        <span class="tile-label"><%= gettext "Unique Token" %></span>
+        <span class="tile-label"><%= gettext "唯一通证" %></span>
       <% else %>
-        <span class="tile-label"><%= gettext "Not unique Token" %></span>
+        <span class="tile-label"><%= gettext "不是唯一的通证" %></span>
       <% end %>
     </div>
 
     <%= if is_unique do %>
       <div class="tile-content col-md-7 col-lg-8 d-flex flex-column">
         <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
-          <span class="mr-1"><%= gettext "Token ID" %>:</span>
+          <span class="mr-1"><%= gettext "通证 ID" %>:</span>
           <span class="tile-title">
             <%= link(@token_transfer.token_id, to: token_instance_path(@conn, :show, "#{@token.contract_address_hash}", "#{@token_transfer.token_id}")) %>
           </span>

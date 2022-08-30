@@ -4,13 +4,13 @@ data-pagination-container>
     <%= if false do %>
     <!-- Pagination limit -->
     <div class="pagination-limit">
-        <%= gettext "Show" %>
+        <%= gettext "显示" %>
         <select>
             <option>20</option>
             <option>50</option>
             <option>100</option>
         </select>
-        <%= gettext "Records" %>
+        <%= gettext "记录" %>
     </div>
     <% end %>
     <!-- Pagination -->
