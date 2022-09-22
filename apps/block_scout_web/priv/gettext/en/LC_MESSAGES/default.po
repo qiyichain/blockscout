@@ -2624,7 +2624,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/chain/show.html.eex:69
 msgid "Daily Transactions"
-msgstr ""
+msgstr "日交易"
 
 #, elixir-format
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:22
@@ -2647,7 +2647,7 @@ msgstr ""
 msgid "Address balance in"
 msgstr ""
 
-#, elixir-format, fuzzy
+#, elixir-format
 #: lib/block_scout_web/templates/address/overview.html.eex:165
 msgid "doesn't include ERC20, ERC721, ERC1155 tokens)."
 msgstr ""
