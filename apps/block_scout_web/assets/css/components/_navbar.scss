@@ -17,6 +17,10 @@ $navbar-logo-width: 100% !default;
   background-color: $header-background-color;
   position: relative;
   z-index: 100;
+  padding: 0.5rem 0 0 0;
+  display: block;
+  box-shadow: unset;
+  // 修改
 
   .nav-item {
     font-size: 14px;
@@ -282,6 +286,14 @@ $navbar-logo-width: 100% !default;
   }
 }
 
+// 新增
+.navbar-container {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  max-width: 1280px;
+}
+
 .navbar-container, .navbar-primary {
   @media (min-width: 992px) {
     padding-right: 0;
@@ -296,4 +308,13 @@ $navbar-logo-width: 100% !default;
 
 .visually-hidden {
   display: block;
+}
+
+// 新增
+.global-search-container {
+  height: 168px;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: $primary;
+  padding-top: 4rem;
 }
