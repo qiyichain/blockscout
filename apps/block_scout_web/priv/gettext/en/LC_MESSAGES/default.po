@@ -1447,7 +1447,7 @@ msgstr "索引 Tokens"
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:3
 #, elixir-autogen, elixir-format
 msgid "Input"
-msgstr "输入"
+msgstr "输入数据"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:219
 #, elixir-autogen, elixir-format
