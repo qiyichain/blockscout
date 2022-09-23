@@ -245,14 +245,17 @@ $navbar-logo-width: 100% !default;
   flex-shrink: 1;
   display: inline-flex;
   .navbar-logo {
-    max-width: 100%;
+    height: 26px;
+    width: auto;
+    // 修改
   }
 }
 
-.navbar-logo {
-  max-height: $navbar-logo-height;
-  width: $navbar-logo-width;
-}
+// 修改
+// .navbar-logo {
+//   max-height: $navbar-logo-height;
+//   width: $navbar-logo-width;
+// }
 
 .logo-text {
   color: #333;
