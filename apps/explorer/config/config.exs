@@ -47,12 +47,12 @@ config :explorer, Explorer.Counters.AddressesCounter,
   update_interval_in_seconds: balances_update_interval || 30 * 60
 
 config :explorer, Explorer.Counters.AddressTransactionsGasUsageCounter,
-  enabled: false,
-  enable_consolidation: false
+  enabled: true,
+  enable_consolidation: true
 
 config :explorer, Explorer.Counters.AddressTokenUsdSum,
-  enabled: false,
-  enable_consolidation: false
+  enabled: true,
+  enable_consolidation: true
 
 config :explorer, Explorer.Chain.Cache.TokenExchangeRate,
   enabled: false,
@@ -75,12 +75,12 @@ config :explorer, Explorer.Counters.AddressTokenTransfersCounter,
   enable_consolidation: true
 
 config :explorer, Explorer.Counters.BlockBurnedFeeCounter,
-  enabled: false,
-  enable_consolidation: false
+  enabled: true,
+  enable_consolidation: true
 
 config :explorer, Explorer.Counters.BlockPriorityFeeCounter,
-  enabled: false,
-  enable_consolidation: false
+  enabled: true,
+  enable_consolidation: true
 
 config :explorer, Explorer.Chain.Cache.GasUsage,
   enabled: System.get_env("CACHE_ENABLE_TOTAL_GAS_USAGE_COUNTER") == "true"
