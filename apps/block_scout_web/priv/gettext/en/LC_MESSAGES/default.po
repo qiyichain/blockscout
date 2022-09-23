@@ -1422,17 +1422,17 @@ msgstr "代理合约的实现地址"
 #: lib/block_scout_web/templates/account/watchlist_address/form.html.eex:56
 #, elixir-autogen, elixir-format
 msgid "Incoming"
-msgstr ""
+msgstr "收入"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:438
 #, elixir-autogen, elixir-format
 msgid "Index position of Transaction in the block."
-msgstr ""
+msgstr "交易在区块中的位置"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:249
 #, elixir-autogen, elixir-format
 msgid "Index position(s) of referenced stale blocks."
-msgstr ""
+msgstr "交易在区块中的位置"
 
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:6
 #, elixir-autogen, elixir-format
@@ -1924,12 +1924,12 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/overview.html.eex:438
 #, elixir-autogen, elixir-format
 msgid "Position"
-msgstr "位置"
+msgstr "在区块的位置"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:254
 #, elixir-autogen, elixir-format
 msgid "Position %{index}"
-msgstr "位置 %{index}"
+msgstr "在区块的位置 %{index}"
 
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:18
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:32
