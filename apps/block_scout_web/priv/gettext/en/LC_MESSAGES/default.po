@@ -2638,7 +2638,7 @@ msgstr "NFT转移"
 #: lib/block_scout_web/views/transaction_view.ex:512
 #, elixir-autogen, elixir-format
 msgid "Token Transfers"
-msgstr "NFT转移(transfer)"
+msgstr "NFT转移"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:54
 #, elixir-autogen, elixir-format
