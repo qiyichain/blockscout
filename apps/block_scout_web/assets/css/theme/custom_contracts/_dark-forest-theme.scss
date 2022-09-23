@@ -44,9 +44,10 @@ $dark-primary-alternate: $dark-primary;
 		}
 	}
 	.navbar.navbar-primary .form-control {
-		background-color: $dark-light-bg !important;
-		border-color: $dark-light-bg !important;
+		background-color: $dark-light-bg  !important;
+		border-color: $dark-light-bg  !important;
 		color: #fff;
+
 		&::placeholder {
 			color: $labels-dark;
 		}
@@ -556,6 +557,7 @@ $dark-primary-alternate: $dark-primary;
 		background-color: $dark-light;
 		border-color: #fff;
 		color: #fff;
+		
 		&::placeholder {
 			color: $labels-dark;
 		}
