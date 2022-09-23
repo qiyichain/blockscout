@@ -877,7 +877,7 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/overview.html.eex:97
 #, elixir-autogen, elixir-format
 msgid "Current transaction state: Success, Failed (Error), or Pending (In Process)"
-msgstr ""
+msgstr "当前交易状态: 成功，失败(错误)，或等待(处理中)"
 
 #: lib/block_scout_web/templates/address_read_contract/index.html.eex:20
 #: lib/block_scout_web/templates/address_write_contract/index.html.eex:18
@@ -910,7 +910,7 @@ msgstr "日交易数"
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:121
 #, elixir-autogen, elixir-format
 msgid "Data"
-msgstr "数据"
+msgstr "数据(Data)"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:70
 #, elixir-autogen, elixir-format
@@ -1447,7 +1447,7 @@ msgstr "索引 Tokens"
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:3
 #, elixir-autogen, elixir-format
 msgid "Input"
-msgstr "输入"
+msgstr "输入数据"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:219
 #, elixir-autogen, elixir-format
@@ -1924,12 +1924,12 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/overview.html.eex:438
 #, elixir-autogen, elixir-format
 msgid "Position"
-msgstr "在区块的位置"
+msgstr "位置"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:254
 #, elixir-autogen, elixir-format
 msgid "Position %{index}"
-msgstr "在区块的位置 %{index}"
+msgstr "位置 %{index}"
 
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:18
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:32
@@ -2017,14 +2017,14 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/overview.html.eex:447
 #, elixir-autogen, elixir-format
 msgid "Raw Input"
-msgstr "原始输入(Raw Input)"
+msgstr "原始输入"
 
 #: lib/block_scout_web/templates/transaction/_tabs.html.eex:24
 #: lib/block_scout_web/templates/transaction_raw_trace/index.html.eex:7
 #: lib/block_scout_web/views/transaction_view.ex:515
 #, elixir-autogen, elixir-format
 msgid "Raw Trace"
-msgstr "原始追踪(Raw Trace)"
+msgstr "原始追踪"
 
 #: lib/block_scout_web/templates/address/_tabs.html.eex:81
 #: lib/block_scout_web/templates/tokens/overview/_tabs.html.eex:27
@@ -2565,7 +2565,7 @@ msgstr "为了保证准确性，使用以上链接验证合约代码"
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:6
 #, elixir-autogen, elixir-format
 msgid "To see accurate decoded input data, the contract must be verified."
-msgstr "为了查看准确的解码，此合约必须被验证。"
+msgstr "为了准确解码输入数据，此合约代码必须进行验证。"
 
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:18
 #, elixir-autogen, elixir-format
@@ -2615,14 +2615,14 @@ msgstr "NFT ID (tokenId)"
 #: lib/block_scout_web/views/transaction_view.ex:448
 #, elixir-autogen, elixir-format
 msgid "Token Minting"
-msgstr "NFT铸造(mint)"
+msgstr "NFT铸造"
 
 #: lib/block_scout_web/templates/common_components/_token_transfer_type_display_name.html.eex:9
 #: lib/block_scout_web/templates/common_components/_token_transfer_type_display_name.html.eex:11
 #: lib/block_scout_web/views/transaction_view.ex:451
 #, elixir-autogen, elixir-format
 msgid "Token Transfer"
-msgstr "NFT转移(transfer)"
+msgstr "NFT转移"
 
 #: lib/block_scout_web/templates/address/_tabs.html.eex:13
 #: lib/block_scout_web/templates/address_token_transfer/index.html.eex:19
@@ -2638,12 +2638,12 @@ msgstr "NFT转移(transfer)"
 #: lib/block_scout_web/views/transaction_view.ex:512
 #, elixir-autogen, elixir-format
 msgid "Token Transfers"
-msgstr "NFT转移(transfer)"
+msgstr "NFT转移"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:54
 #, elixir-autogen, elixir-format
 msgid "Token name and symbol."
-msgstr "NFT名称(name)和代号(symbol)"
+msgstr "NFT名称和代号"
 
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:142
 #, elixir-autogen, elixir-format
@@ -2674,12 +2674,12 @@ msgstr "NFT创建"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:273
 #, elixir-autogen, elixir-format
 msgid "Tokens Minted"
-msgstr "NFT铸造(mint)"
+msgstr "NFT铸造"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:257
 #, elixir-autogen, elixir-format
 msgid "Tokens Transferred"
-msgstr "NFT转移(transfer)"
+msgstr "NFT转移"
 
 #: lib/block_scout_web/templates/address/_metatags.html.eex:13
 #, elixir-autogen, elixir-format
@@ -2689,13 +2689,13 @@ msgstr "账户排名 - %{subnetwork} 浏览器"
 #: lib/block_scout_web/templates/address_logs/index.html.eex:14
 #, elixir-autogen, elixir-format
 msgid "Topic"
-msgstr "话题"
+msgstr ""
 
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:71
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:91
 #, elixir-autogen, elixir-format
 msgid "Topics"
-msgstr "话题"
+msgstr ""
 
 #: lib/block_scout_web/templates/block/overview.html.eex:169
 #, elixir-autogen, elixir-format
@@ -2984,7 +2984,7 @@ msgstr "验证并发布"
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:10
 #, elixir-autogen, elixir-format
 msgid "Verify the contract "
-msgstr "验证合约"
+msgstr "验证合约点击:"
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:89
 #, elixir-autogen, elixir-format
