@@ -24,11 +24,11 @@
               <span class="nav-link-icon">
                 <%= render BlockScoutWeb.IconsView, "_transaction_icon.html" %>
               </span>
-              <%= gettext("交易") %>
+              <%= gettext("Transactions") %>
             </a>
             <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
               <%= link(
-                    gettext("已验证"),
+                    gettext("Validated"),
                     class: "dropdown-item #{tab_status("txs", @conn.request_path)}",
                     to: transaction_path(@conn, :index)
                   ) %>
@@ -36,7 +36,7 @@
               <% variant = Keyword.fetch!(json_rpc_named_arguments, :variant) %>
               <%= if variant !== EthereumJSONRPC.Besu do %>
                 <%= link(
-                      gettext("确认中"),
+                      gettext("Pending"),
                       class: "dropdown-item #{tab_status("pending-transactions", @conn.request_path)}",
                       "data-test": "pending_transactions_link",
                       to: pending_transaction_path(@conn, :index)
@@ -45,7 +45,7 @@
             </div>
           </li>
         <% end %>
-        
+
         <%= if apps_menu == true do %>
           <li class="nav-item dropdown">
             <a href="#" role="button" id="navbarAppsDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -60,7 +60,7 @@
             </a>
             <div class="dropdown-menu" aria-labeledby="navbarAppsDropdown">
               <%= if apps_menu == true do %>
-                <%= for %{url: url, title: title} <- external_apps_list() do %> 
+                <%= for %{url: url, title: title} <- external_apps_list() do %>
                     <a href="<%= url %>" class="dropdown-item" target="_blank"><%= title %>
                       <span class="external-link-icon">
                         <%= render BlockScoutWeb.IconsView, "_external_link.html" %>
@@ -71,7 +71,7 @@
             </div>
           </li>
         <% end %>
-        
+
       </ul>
       <!-- Dark mode changer -->
       <button class="dark-mode-changer" id="dark-mode-changer">
