@@ -2615,14 +2615,14 @@ msgstr "NFT ID (tokenId)"
 #: lib/block_scout_web/views/transaction_view.ex:448
 #, elixir-autogen, elixir-format
 msgid "Token Minting"
-msgstr "NFT铸造(mint)"
+msgstr "NFT铸造"
 
 #: lib/block_scout_web/templates/common_components/_token_transfer_type_display_name.html.eex:9
 #: lib/block_scout_web/templates/common_components/_token_transfer_type_display_name.html.eex:11
 #: lib/block_scout_web/views/transaction_view.ex:451
 #, elixir-autogen, elixir-format
 msgid "Token Transfer"
-msgstr "NFT转移(transfer)"
+msgstr "NFT转移"
 
 #: lib/block_scout_web/templates/address/_tabs.html.eex:13
 #: lib/block_scout_web/templates/address_token_transfer/index.html.eex:19
