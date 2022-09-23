@@ -94,6 +94,12 @@ $dark-stakes-banned-background: #3e314c;
 		background-color: $dark-secondary;
 	}
 
+	// 新增
+	.global-search-container {
+		background-image: none;
+		background-color: $dark-bg  !important;
+	}
+
 	// hero stats
 
 	.layout-container .dashboard-banner-container {
