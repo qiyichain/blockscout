@@ -545,7 +545,7 @@ msgstr "关闭"
 #: lib/block_scout_web/views/address_view.ex:367
 #, elixir-autogen, elixir-format
 msgid "Code"
-msgstr ""
+msgstr "合约代码"
 
 #: lib/block_scout_web/templates/address/_tabs.html.eex:34
 #: lib/block_scout_web/views/address_view.ex:373
@@ -1071,7 +1071,7 @@ msgstr "ERC-721, ERC-1155 NFT "
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:137
 #, elixir-autogen, elixir-format
 msgid "ETH"
-msgstr "燃料"
+msgstr "加仑"
 
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:4
 #, elixir-autogen, elixir-format
@@ -1189,7 +1189,7 @@ msgstr "奇异链RPC"
 #: lib/block_scout_web/views/wei_helpers.ex:78
 #, elixir-autogen, elixir-format
 msgid "Ether"
-msgstr "燃料"
+msgstr "加仑"
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:211
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:164
@@ -1321,7 +1321,7 @@ msgstr "交易消耗的燃料"
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "Gas tracker"
-msgstr "燃料跟踪"
+msgstr "燃料"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:239
 #, elixir-autogen, elixir-format
@@ -3174,7 +3174,7 @@ msgstr "你的名字*"
 #: lib/block_scout_web/templates/address/overview.html.eex:111
 #, elixir-autogen, elixir-format
 msgid "at"
-msgstr "在"
+msgstr "在交易"
 
 #: lib/block_scout_web/templates/address_token/overview.html.eex:52
 #, elixir-autogen, elixir-format
