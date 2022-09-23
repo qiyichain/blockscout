@@ -2448,12 +2448,12 @@ msgstr "没有等待中的交易。"
 #: lib/block_scout_web/templates/address_token_transfer/index.html.eex:53
 #, elixir-autogen, elixir-format
 msgid "There are no token transfers for this address."
-msgstr "此地址没有NFT转账。"
+msgstr "此地址没有NFT转移。"
 
 #: lib/block_scout_web/templates/transaction_token_transfer/index.html.eex:19
 #, elixir-autogen, elixir-format
 msgid "There are no token transfers for this transaction"
-msgstr "此交易没有NFT转账。"
+msgstr "此交易没有NFT转移。"
 
 #: lib/block_scout_web/templates/address_token/index.html.eex:65
 #, elixir-autogen, elixir-format
@@ -2622,7 +2622,7 @@ msgstr "NFT铸造(mint)"
 #: lib/block_scout_web/views/transaction_view.ex:451
 #, elixir-autogen, elixir-format
 msgid "Token Transfer"
-msgstr "NFT转账(transfer)"
+msgstr "NFT转移(transfer)"
 
 #: lib/block_scout_web/templates/address/_tabs.html.eex:13
 #: lib/block_scout_web/templates/address_token_transfer/index.html.eex:19
@@ -2638,7 +2638,7 @@ msgstr "NFT转账(transfer)"
 #: lib/block_scout_web/views/transaction_view.ex:512
 #, elixir-autogen, elixir-format
 msgid "Token Transfers"
-msgstr "NFT转账(transfer)"
+msgstr "NFT转移(transfer)"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:54
 #, elixir-autogen, elixir-format
@@ -2679,7 +2679,7 @@ msgstr "NFT铸造(mint)"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:257
 #, elixir-autogen, elixir-format
 msgid "Tokens Transferred"
-msgstr "NFT转账(transfer)"
+msgstr "NFT转移(transfer)"
 
 #: lib/block_scout_web/templates/address/_metatags.html.eex:13
 #, elixir-autogen, elixir-format
@@ -2743,7 +2743,7 @@ msgstr "总交易数"
 #: lib/block_scout_web/views/transaction_view.ex:461
 #, elixir-autogen, elixir-format
 msgid "Transaction"
-msgstr "普通转账"
+msgstr "普通交易"
 
 #: lib/block_scout_web/templates/transaction/_metatags.html.eex:3
 #, elixir-autogen, elixir-format
