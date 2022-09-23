@@ -17,7 +17,7 @@
 
     <div class="footer-content-row">
       <div class="">
-        <p class="footer-title-text"><%= gettext("为数字世界服务的高性能许可公链") %></p>
+        <p class="footer-title-text"><%= gettext("为数字世界服务的高性能许可链") %></p>
       </div>
       <!--
       <div class="">
