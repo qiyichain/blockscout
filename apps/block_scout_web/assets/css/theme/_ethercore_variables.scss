@@ -60,13 +60,14 @@ $card-tab-active: $tertiary;
     color: $tertiary !important;
   }
 
-  .dashboard-banner-container {
-    background-image: linear-gradient(
-      to bottom,
-      $dashboard-banner-gradient-start,
-      $dashboard-banner-gradient-end
-    );
-  }
+  // 修改
+  // .dashboard-banner-container {
+  //   background-image: linear-gradient(
+  //     to bottom,
+  //     $dashboard-banner-gradient-start,
+  //     $dashboard-banner-gradient-end
+  //   );
+  // }
 
   .footer-logo {
     filter: brightness(0) invert(1);

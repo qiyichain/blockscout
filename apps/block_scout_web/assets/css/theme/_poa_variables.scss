@@ -53,15 +53,15 @@ a.tile-title { color: $primary !important; }
 $card-background-1: $primary;
 $card-tab-active: $primary;
 
-.layout-container {
-	.dashboard-banner-container {
-	  background-image: linear-gradient(
-	    to bottom,
-	    $dashboard-banner-gradient-start,
-	    $dashboard-banner-gradient-end
-	  );
-	}
-}
+// .layout-container {
+// 	.dashboard-banner-container {
+// 	  background-image: linear-gradient(
+// 	    to bottom,
+// 	    $dashboard-banner-gradient-start,
+// 	    $dashboard-banner-gradient-end
+// 	  );
+// 	}
+// }
 
 // Badges
 $badge-neutral-color: $primary;

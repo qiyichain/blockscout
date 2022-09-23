@@ -50,15 +50,15 @@ a.tile-title { color: $secondary !important; }
 $card-background-1: $secondary;
 $card-tab-active: $secondary;
 
-.layout-container {
-	.dashboard-banner-container {
-	  background-image: linear-gradient(
-	    to bottom,
-	    $dashboard-banner-gradient-start,
-	    $dashboard-banner-gradient-end
-	  );
-	}
-}
+// .layout-container {
+// 	.dashboard-banner-container {
+// 	  background-image: linear-gradient(
+// 	    to bottom,
+// 	    $dashboard-banner-gradient-start,
+// 	    $dashboard-banner-gradient-end
+// 	  );
+// 	}
+// }
 
 // Dark theme
 $dark-primary: #49a2ee;

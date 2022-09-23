@@ -61,15 +61,15 @@ a.tile-title { color: $sub-accent-color !important; }
 $card-background-1: $sub-accent-color;
 $card-tab-active: $sub-accent-color;
 
-.layout-container {
-	.dashboard-banner-container {
-	  background-image: linear-gradient(
-	    to bottom,
-	    $dashboard-banner-gradient-start,
-	    $dashboard-banner-gradient-end
-	  );
-	}
-}
+// .layout-container {
+// 	.dashboard-banner-container {
+// 	  background-image: linear-gradient(
+// 	    to bottom,
+// 	    $dashboard-banner-gradient-start,
+// 	    $dashboard-banner-gradient-end
+// 	  );
+// 	}
+// }
 
 // Badges
 $badge-neutral-color: $tertiary;

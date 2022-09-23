@@ -77,6 +77,10 @@ $dark-stakes-banned-background: #3e314c;
 		filter: invert(1);
 	}
 
+	.dashboard-banner-network-stats-value {
+		color: #9b62ff;
+	}
+
 	// footer
 	.footer {
 		background: $dark-light-bg;
@@ -106,13 +110,24 @@ $dark-stakes-banned-background: #3e314c;
 		background-image: none;
 		background-color: $dark-bg !important;
 	}
+
+	.global-search-container {
+		background-image: none;
+		background-color: $dark-bg  !important;
+	}
+
 	.dashboard-banner-network-plain-container,
 	.dashboard-banner-network-plain-container::after {
 		background-color: $dark-light-bg;
 	}
+
+	.dashboard-banner-network-graph {
+		background-color: $dark-light-bg;
+	}
+
 	.dashboard-banner-network-stats-label,
 	.dashboard-banner-chart-legend .dashboard-banner-chart-legend-label {
-		color: $labels-dark;
+		color: #FFF;
 	}
 	.dashboard-banner-network-stats-item::before {
 		background-color: $dark-secondary;

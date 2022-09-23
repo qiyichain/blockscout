@@ -139,6 +139,8 @@ $navbar-logo-width: 100% !default;
     position: relative;
     width: 100%;
     z-index: 1;
+    border-radius: 6px !important;
+    // 修改
 
     &[placeholder]{
       text-overflow: ellipsis !important;
