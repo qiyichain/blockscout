@@ -2383,7 +2383,7 @@ msgstr ""
 #: lib/block_scout_web/templates/page_not_found/index.html.eex:8
 #, elixir-autogen, elixir-format
 msgid "The requested path was not found on BlockScout."
-msgstr "请求路径未找到"
+msgstr "对不起,请求内容未找到(温馨提示:如果您在查询NFT详情,可能原因是NFT合约未正确设置baseURI.)"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:134
 #, elixir-autogen, elixir-format
