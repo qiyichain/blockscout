@@ -89,7 +89,7 @@ defmodule Explorer.Counters.AverageBlockTimeDurationFormat do
 
     # remove any trailing `.0`
     if decimal_value == truncated do
-      Translator.translate_plural(locale, "units", "%{count} #{singular}", "%{count} #{singular}s", truncated)
+      Translator.translate_plural(locale, "units", "%{count} #{singular}", "%{count} #{singular}", truncated)
     else
       value =
         decimal_value
@@ -97,7 +97,7 @@ defmodule Explorer.Counters.AverageBlockTimeDurationFormat do
         |> :erlang.float_to_binary(decimals: 1)
 
       locale
-      |> Translator.translate_plural("units", "%{count} #{singular}", "%{count} #{singular}s", 5)
+      |> Translator.translate_plural("units", "%{count} #{singular}", "%{count} #{singular}", 5)
       |> String.replace("5", value)
     end
   end
