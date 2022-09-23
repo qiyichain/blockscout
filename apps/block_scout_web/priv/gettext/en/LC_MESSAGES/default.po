@@ -877,7 +877,7 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/overview.html.eex:97
 #, elixir-autogen, elixir-format
 msgid "Current transaction state: Success, Failed (Error), or Pending (In Process)"
-msgstr ""
+msgstr "当前交易状态: 成功，失败(错误)，或等待(处理中)"
 
 #: lib/block_scout_web/templates/address_read_contract/index.html.eex:20
 #: lib/block_scout_web/templates/address_write_contract/index.html.eex:18
