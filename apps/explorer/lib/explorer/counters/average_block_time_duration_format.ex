@@ -16,14 +16,14 @@ defmodule Explorer.Counters.AverageBlockTimeDurationFormat do
   @year @day * 365
 
   @unit_term_mapping [
-    {@year, "year"},
-    {@month, "month"},
-    {@week, "week"},
-    {@day, "day"},
-    {@hour, "hour"},
-    {@minute, "minute"},
-    {@second, "second"},
-    {@millisecond, "millisecond"}
+    {@year, "年"},
+    {@month, "月"},
+    {@week, "周"},
+    {@day, "天"},
+    {@hour, "小时"},
+    {@minute, "分"},
+    {@second, "秒"},
+    {@millisecond, "毫秒"}
   ]
 
   @doc """
