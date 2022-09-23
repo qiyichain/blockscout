@@ -1,20 +1,20 @@
-$footer-background-color: $secondary !default;
+$footer-background-color: $secondary  !default;
 $footer-title-color: #fff !default;
 $footer-text-color: rgba(#fff, 0.7) !default;
-$footer-link-color: $footer-text-color !default;
-$footer-item-disc-color: $primary !default;
-$footer-social-icon-color: $footer-text-color !default;
+$footer-link-color: $footer-text-color  !default;
+$footer-item-disc-color: $primary  !default;
+$footer-social-icon-color: $footer-text-color  !default;
 $footer-logo-height: 28px !default;
 $footer-logo-width: auto !default;
 
 .footer {
-  background: $footer-background-color;
-  color: $footer-text-color;
+  background: #F5F5F5;
   font-size: 12px;
   line-height: 1.67;
   margin: 0;
   padding: 40px 0;
   position: relative;
+  text-align: center;
 
   @media (max-width: $breakpoint-md) {
     width: 100%;
@@ -25,14 +25,26 @@ $footer-logo-width: auto !default;
   margin-bottom: 30px;
 }
 
+.footer-content-row {
+  display: block;
+}
+
 .footer-logo {
-  max-height: $footer-logo-height;
-  width: $footer-logo-width;
+  height: 36px;
+  width: auto;
+}
+
+.footer-title-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1D2129;
 }
 
 .footer-info-text {
-  margin: 0 0 25px;
   padding: 0 20px 0 0;
+  color: #999999;
+  max-width: 578px;
+  margin: 0 auto;
 }
 
 .footer-social-icons {
@@ -94,10 +106,12 @@ $footer-logo-width: auto !default;
 
       a {
         transition: $transition-cont;
+
         &:hover {
           text-decoration: none;
           color: #fff;
         }
+
         &:focus {
           color: darken($footer-text-color, 5);
         }
