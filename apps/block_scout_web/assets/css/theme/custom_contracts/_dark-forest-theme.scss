@@ -92,7 +92,7 @@ $dark-primary-alternate: $dark-primary;
 	}
 	.dashboard-banner-network-stats-label,
 	.dashboard-banner-chart-legend .dashboard-banner-chart-legend-label {
-		color: $labels-dark;
+		color: #FFF;
 	}
 	.dashboard-banner-chart-legend .dashboard-banner-chart-legend-item:nth-child(1)::before {
 		background-color: $dark-primary;
@@ -557,7 +557,7 @@ $dark-primary-alternate: $dark-primary;
 		background-color: $dark-light;
 		border-color: #fff;
 		color: #fff;
-		
+
 		&::placeholder {
 			color: $labels-dark;
 		}
