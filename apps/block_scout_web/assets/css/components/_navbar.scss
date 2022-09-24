@@ -276,12 +276,12 @@ $navbar-logo-width: 100% !default;
   }
 }
 
-@include media-breakpoint-up(md) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: $header-link-horizontal-padding;
-    padding-right: $header-link-horizontal-padding;
-  }
-}
+// @include media-breakpoint-up(md) {
+//   .navbar-expand-lg .navbar-nav .nav-link {
+//     padding-left: $header-link-horizontal-padding;
+//     padding-right: $header-link-horizontal-padding;
+//   }
+// }
 
 .add-border {
   border: 1px solid transparentize($white, 0.30);
