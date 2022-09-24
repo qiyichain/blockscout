@@ -17,7 +17,7 @@ $navbar-logo-width: 100% !default;
   background-color: $header-background-color;
   position: relative;
   z-index: 100;
-  padding: 0.5rem 0 0 0;
+  padding: 0.5rem 0.37rem 0;
   display: block;
   box-shadow: unset;
   // 修改
@@ -239,6 +239,7 @@ $navbar-logo-width: 100% !default;
   }
   .navbar-nav {
     white-space: nowrap;
+    padding-left: 12px;
   }
 }
 
