@@ -258,10 +258,10 @@ export const elements = {
 
       $el.show()
       if (state.pagesStack.length === 0) {
-        return $el.text('Page 1')
+        return $el.text('第1页')
       }
 
-      $el.text('Page ' + state.pagesStack.length)
+      $el.text('第' + state.pagesStack.length + '页')
     }
   },
   '[data-async-listing] [data-loading-button]': {

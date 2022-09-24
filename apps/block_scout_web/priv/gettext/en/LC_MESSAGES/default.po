@@ -2,8 +2,8 @@
 #, elixir-autogen, elixir-format
 msgid "%{count} token"
 msgid_plural "%{count} tokens"
-msgstr[0] "%{count} 个NFT"
-msgstr[1] "%{count} 个NFT"
+msgstr[0] "%{count} 种NFT"
+msgstr[1] "%{count} 种NFT"
 
 #: lib/block_scout_web/templates/block/_tile.html.eex:29
 #, elixir-autogen, elixir-format
@@ -40,18 +40,18 @@ msgstr "%{block_type} 高度"
 #: lib/block_scout_web/templates/block/index.html.eex:7
 #, elixir-autogen, elixir-format
 msgid "%{block_type}s"
-msgstr ""
+msgstr "区块"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:85
 #, elixir-autogen, elixir-format
 msgid "%{count} Transaction"
-msgstr "%{count} 交易"
+msgstr "%{count} 笔交易"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:87
 #: lib/block_scout_web/templates/chain/_block.html.eex:11
 #, elixir-autogen, elixir-format
 msgid "%{count} Transactions"
-msgstr ""
+msgstr "%{count} 笔交易"
 
 #: lib/block_scout_web/templates/chain/_metatags.html.eex:2
 #, elixir-autogen, elixir-format
@@ -95,7 +95,7 @@ msgstr "验证节点."
 #: lib/block_scout_web/templates/address_contract_verification_via_multi_part_files/new.html.eex:86
 #, elixir-autogen, elixir-format
 msgid "A library name called in the .sol file. Multiple libraries (up to 5) may be added for each contract. Click the Add Library button to add an additional one."
-msgstr ""
+msgstr "在 .sol 文件中调用的库名.如果有多个库,请点击添加库合约进行添加."
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:73
 #, elixir-autogen, elixir-format
@@ -115,7 +115,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification_common_fields/_constructor_args.html.eex:3
 #, elixir-autogen, elixir-format
 msgid "ABI-encoded Constructor Arguments (if required by the contract)"
-msgstr ""
+msgstr "ABI-编码构造函数(如果合约需要的话)"
 
 #: lib/block_scout_web/templates/api_docs/index.html.eex:4
 #, elixir-autogen, elixir-format
@@ -317,7 +317,7 @@ msgstr ""
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:21
 #, elixir-autogen, elixir-format
 msgid "Average"
-msgstr "平均"
+msgstr "-"
 
 #: lib/block_scout_web/templates/chain/show.html.eex:100
 #, elixir-autogen, elixir-format
@@ -510,7 +510,7 @@ msgstr ""
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:54
 #, elixir-autogen, elixir-format
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:41
 #, elixir-autogen, elixir-format
@@ -520,13 +520,13 @@ msgstr "联系我们"
 #: lib/block_scout_web/views/block_view.ex:63
 #, elixir-autogen, elixir-format
 msgid "Chore Reward"
-msgstr ""
+msgstr "奖励"
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:137
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:106
 #, elixir-autogen, elixir-format
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: lib/block_scout_web/templates/address/_validator_metadata_modal.html.eex:37
 #: lib/block_scout_web/templates/common_components/_modal_qr_code.html.eex:6
@@ -586,7 +586,7 @@ msgstr "已确认"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:124
 #, elixir-autogen, elixir-format
 msgid "Confirmed by "
-msgstr "确认区块数:"
+msgstr "确认数:"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:190
 #, elixir-autogen, elixir-format
@@ -902,7 +902,7 @@ msgstr ""
 #: lib/block_scout_web/templates/chain/show.html.eex:69
 #, elixir-autogen, elixir-format
 msgid "Daily Transactions"
-msgstr "日交易数"
+msgstr "今日交易"
 
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:101
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:7
@@ -1023,7 +1023,7 @@ msgstr "拖拽源码或者点击这里"
 #: lib/block_scout_web/templates/address_contract_verification_via_standard_json_input/new.html.eex:28
 #, elixir-autogen, elixir-format
 msgid "Drop the standard input JSON file or click here"
-msgstr "拖拽标准输入Json文件或者点击这里"
+msgstr "拖拽标准输入JSON文件或者点击这里"
 
 #: lib/block_scout_web/templates/transaction/not_found.html.eex:22
 #, elixir-autogen, elixir-format
@@ -1126,12 +1126,12 @@ msgstr "派发奖励"
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:68
 #, elixir-autogen, elixir-format
 msgid "Enter the Solidity Contract Code"
-msgstr "进入Solidity合约代码"
+msgstr "填入Solidity合约代码"
 
 #: lib/block_scout_web/templates/address_contract_verification_vyper/new.html.eex:22
 #, elixir-autogen, elixir-format
 msgid "Enter the Vyper Contract Code"
-msgstr "进入Vyper合约代码"
+msgstr "填入Vyper合约代码"
 
 #: lib/block_scout_web/templates/internal_transaction/_tile.html.eex:11
 #: lib/block_scout_web/templates/transaction/_decoded_input_body.html.eex:10
@@ -1232,7 +1232,7 @@ msgstr "日志数据解码失败"
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:22
 #, elixir-autogen, elixir-format
 msgid "Fast"
-msgstr "快速"
+msgstr "快"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:247
 #, elixir-autogen, elixir-format
@@ -1286,7 +1286,7 @@ msgstr "论坛"
 #: lib/block_scout_web/views/address_transaction_view.ex:10
 #, elixir-autogen, elixir-format
 msgid "From"
-msgstr "发送方(From)"
+msgstr ""
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:18
 #, elixir-autogen, elixir-format
@@ -1303,7 +1303,7 @@ msgstr "燃料限制"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:353
 #, elixir-autogen, elixir-format
 msgid "Gas Price"
-msgstr "燃料价格"
+msgstr "燃料单价"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:240
 #: lib/block_scout_web/templates/block/_tile.html.eex:73
@@ -1321,7 +1321,7 @@ msgstr "交易消耗的燃料"
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "Gas tracker"
-msgstr "推荐燃料价"
+msgstr "燃料预测"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:239
 #, elixir-autogen, elixir-format
@@ -1368,7 +1368,7 @@ msgstr "哈希"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:458
 #, elixir-autogen, elixir-format
 msgid "Hex (Default)"
-msgstr "十六进制格式(默认)"
+msgstr "十六进制(默认)"
 
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:108
 #, elixir-autogen, elixir-format
@@ -1383,7 +1383,7 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:19
 #, elixir-autogen, elixir-format
 msgid "IMPORTANT: This information is a best guess based on similar functions from other verified contracts."
-msgstr "重要：这些信息已是最好的推测，基于其他类似的已验证的合约。"
+msgstr "注意：以下显示的信息是根据类似的已验证的合约进行推测的结果，可能不准确。"
 
 #: lib/block_scout_web/templates/internal_transaction/_tile.html.eex:42
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:92
@@ -1689,7 +1689,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "Must match the name specified in the code. For example, in <span class=\"tooltip-quote\">contract MyContract {..}</span> <strong>MyContract</strong> is the contract name."
-msgstr ""
+msgstr "合约名必须和代码中的合约名保持一致. 例如, 合约代码为 <span class=\"tooltip-quote\">contract MyContract {..}</span> 那么 <strong>MyContract</strong> 就是合约名."
 
 #: lib/block_scout_web/templates/block/overview.html.eex:116
 #, elixir-autogen, elixir-format
@@ -1835,14 +1835,14 @@ msgstr "仅第一次"
 #: lib/block_scout_web/templates/address_contract/index.html.eex:61
 #, elixir-autogen, elixir-format
 msgid "Optimization enabled"
-msgstr ""
+msgstr "开启优化"
 
 #: lib/block_scout_web/templates/address_contract/index.html.eex:70
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:58
 #: lib/block_scout_web/templates/address_contract_verification_via_multi_part_files/new.html.eex:54
 #, elixir-autogen, elixir-format
 msgid "Optimization runs"
-msgstr ""
+msgstr "优化级别(Optimization runs)"
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:74
 #, elixir-autogen, elixir-format
@@ -1864,7 +1864,7 @@ msgstr "所有者地址"
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:73
 #, elixir-autogen, elixir-format
 msgid "POA solidity flattener or the"
-msgstr ""
+msgstr "hardhat flattener 或  "
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:19
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:26
@@ -2214,7 +2214,7 @@ msgstr "区块字节大小"
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:20
 #, elixir-autogen, elixir-format
 msgid "Slow"
-msgstr "较慢"
+msgstr "慢"
 
 #: lib/block_scout_web/templates/account/public_tags_request/index.html.eex:21
 #, elixir-autogen, elixir-format
@@ -2268,7 +2268,7 @@ msgstr "源码 *.sol 文件"
 #: lib/block_scout_web/templates/address_contract_verification_via_json/new.html.eex:14
 #, elixir-autogen, elixir-format
 msgid "Sources and Metadata JSON"
-msgstr "原始数据和元数据Json"
+msgstr "原始数据和元数据JSON"
 
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:125
 #, elixir-autogen, elixir-format
@@ -2278,7 +2278,7 @@ msgstr "质押"
 #: lib/block_scout_web/templates/address_contract_verification_via_standard_json_input/new.html.eex:24
 #, elixir-autogen, elixir-format
 msgid "Standard Input JSON"
-msgstr "标准输入Json"
+msgstr "标准输入JSON"
 
 #: lib/block_scout_web/views/internal_transaction_view.ex:24
 #, elixir-autogen, elixir-format
@@ -2348,7 +2348,7 @@ msgstr "区块高度"
 #: lib/block_scout_web/templates/address_contract_verification_via_multi_part_files/new.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "The compiler version is specified in <span class=\"tooltip-quote\">pragma solidity X.X.X</span>. Use the compiler version rather than the nightly build. If using the Solidity compiler, run <span class=\"tooltip-quote\">solc —version</span> to check."
-msgstr ""
+msgstr "编译器版本,请保持和你开发环境的编译版本一致"
 
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:38
 #, elixir-autogen, elixir-format
@@ -2558,7 +2558,7 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:20
 #, elixir-autogen, elixir-format
 msgid "To have guaranteed accuracy, use the link above to verify the contract's source code."
-msgstr "为了保证准确性，使用以上链接验证合约代码"
+msgstr "为了保证准确性，请验证并发布合约代码。"
 
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:6
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:8
@@ -2602,7 +2602,7 @@ msgstr "NFT详情"
 #: lib/block_scout_web/views/tokens/overview_view.ex:40
 #, elixir-autogen, elixir-format
 msgid "Token Holders"
-msgstr "NFT持有账户"
+msgstr "NFT持有地址"
 
 #: lib/block_scout_web/templates/tokens/instance/overview/_details.html.eex:38
 #: lib/block_scout_web/templates/tokens/inventory/_token.html.eex:18
@@ -2725,7 +2725,7 @@ msgstr "区块中交易提供的燃料限制总和"
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:69
 #, elixir-autogen, elixir-format
 msgid "Total supply"
-msgstr "总供应量"
+msgstr "总量"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:337
 #, elixir-autogen, elixir-format
@@ -2999,12 +2999,12 @@ msgstr "通过Sourcify:合约代码和元数据"
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:27
 #, elixir-autogen, elixir-format
 msgid "Via Standard Input JSON"
-msgstr "通过标准输入Json"
+msgstr "通过标准输入JSON"
 
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:22
 #, elixir-autogen, elixir-format
 msgid "Via flattened source code"
-msgstr "通过合约代码"
+msgstr "通过扁平化的Solidity合约代码"
 
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:40
 #, elixir-autogen, elixir-format
@@ -3030,12 +3030,12 @@ msgstr "查看合约"
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:73
 #, elixir-autogen, elixir-format
 msgid "View Less Transfers"
-msgstr "查看更少转账"
+msgstr "查看更少转移"
 
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:72
 #, elixir-autogen, elixir-format
 msgid "View More Transfers"
-msgstr "查看更多转帐"
+msgstr "查看更多转移"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:39
 #, elixir-autogen, elixir-format
@@ -3285,4 +3285,4 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:73
 #, elixir-autogen, elixir-format
 msgid "truffle flattener"
-msgstr ""
+msgstr "truffle-flattener"

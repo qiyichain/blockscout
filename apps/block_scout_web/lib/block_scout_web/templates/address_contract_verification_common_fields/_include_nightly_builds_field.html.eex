@@ -1,6 +1,6 @@
 <div class="smart-contract-form-group">
     <div class="smart-contract-form-group-inner-wrapper">
-        <%= label @f, "Include nightly builds" %>
+        <%= label @f, "包含nightly构建" %>
         <div class="center-column">
             <div class="form-radios-group">
                 <div class="radio-big">
@@ -16,6 +16,6 @@
             </div>
             <%= error_tag @f, :nightly_builds, id: "nightly_builds-help-block", class: "text-danger form-error" %>
         </div>
-        <div class="smart-contract-form-group-tooltip">Select yes if you want to show nightly builds.</div>
+        <div class="smart-contract-form-group-tooltip">如果要显示nightly构建,请选择选择是.</div>
     </div>
 </div>

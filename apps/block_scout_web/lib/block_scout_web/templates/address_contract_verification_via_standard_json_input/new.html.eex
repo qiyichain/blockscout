@@ -10,10 +10,10 @@
       <%= form_for changeset,
                 address_contract_verification_path(@conn, :create),
                 [id: "standard-json-dropzone-form"],
-                fn f -> %>      
+                fn f -> %>
       <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_contract_address_field.html", f: f %>
 
-      <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_contract_name_field.html", f: f, tooltip: "Must match the name specified in the code. For example, in <span class=\"tooltip-quote\">contract MyContract {..}</span> <strong>MyContract</strong> is the contract name. Also contract name could be: <span class=\"tooltip-quote\"><strong>path/to/file.sol:MyContract</strong></span>" %>
+      <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_contract_name_field.html", f: f, tooltip: "合约名必须和代码中的合约名保持一致. 例如, 合约代码为 <span class=\"tooltip-quote\">contract MyContract {..}</span> 那么 <strong>MyContract</strong> 就是合约名. 合约名也可以是这样: <span class=\"tooltip-quote\"><strong>path/to/file.sol:MyContract</strong></span>" %>
 
       <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_include_nightly_builds_field.html", f: f %>
 

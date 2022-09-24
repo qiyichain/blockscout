@@ -5,6 +5,6 @@
             <%= textarea @f, :constructor_arguments, class: "form-control border-rounded monospace", rows: 3, "aria-describedby": "contract-constructor-arguments-help-block" %>
             <%= error_tag @f, :constructor_arguments, id: "contract-constructor-arguments-help-block", class: "text-danger form-error", "data-test": "contract-constructor-arguments-error" %>
         </div>
-        <div class="smart-contract-form-group-tooltip">Add arguments in <a href="https://solidity.readthedocs.io/en/develop/abi-spec.html" target="_blank">ABI hex encoded form</a>. Constructor arguments are written right to left, and will be found at the end of the input created bytecode. They may also be <a href="https://abi.hashex.org/" target="_blank">parsed here.</a></div>
+        <div class="smart-contract-form-group-tooltip">添加参数 <a href="https://solidity.readthedocs.io/en/develop/abi-spec.html" target="_blank">ABI hex encoded form</a>. 构造函数参数从左到写, 可以在构造交易的input data末尾找到. <a href="https://abi.hashex.org/" target="_blank">这里可以解析交易的Input Data.</a></div>
     </div>
 </div>

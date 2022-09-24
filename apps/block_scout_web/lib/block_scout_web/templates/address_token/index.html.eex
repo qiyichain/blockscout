@@ -28,25 +28,19 @@
                             <div>&nbsp;</div>
                         </th>
                         <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">Asset</div>
+                            <div class="stakes-table-th-content">名称</div>
                         </th>
                         <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">Type</div>
+                            <div class="stakes-table-th-content">类型</div>
                         </th>
                         <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">Amount</div>
+                            <div class="stakes-table-th-content">数量</div>
                         </th>
                         <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">Symbol</div>
+                            <div class="stakes-table-th-content">简称</div>
                         </th>
                         <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">Price</div>
-                        </th>
-                        <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">Value</div>
-                        </th>
-                        <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">Contract Address</div>
+                            <div class="stakes-table-th-content">合约地址</div>
                         </th>
                     </tr>
                 </thead>

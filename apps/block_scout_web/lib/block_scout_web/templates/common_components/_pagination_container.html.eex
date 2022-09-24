@@ -1,4 +1,4 @@
-<div 
+<div
 class='pagination-container <%= if assigns[:position] == "top" do %>position-top<% end %> <%= if assigns[:position] == "bottom" do %>position-bottom<% end %>'
 data-pagination-container>
     <%= if false do %>
@@ -22,7 +22,7 @@ data-pagination-container>
                 class="page-link"
                 href
                 data-first-page-button
-            >First</a>
+            >第一页</a>
         </li>
         <!-- Previous -->
         <li class="page-item">
@@ -59,7 +59,7 @@ data-pagination-container>
                 <%= if !assigns[:last_page_path] do %>disabled<% end %>
                 class="page-link"
                 href='<%= "#{assigns[:last_page_path]}" %>'
-            >Last</a>
+            >最后一页</a>
         </li>
         <% end %>
     </ul>
