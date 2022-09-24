@@ -2834,7 +2834,7 @@ msgstr "发送的交易"
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:119
 #, elixir-autogen, elixir-format
 msgid "Transfers"
-msgstr "转账"
+msgstr "转移"
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:40
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:47
@@ -3030,12 +3030,12 @@ msgstr "查看合约"
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:73
 #, elixir-autogen, elixir-format
 msgid "View Less Transfers"
-msgstr "查看更少转账"
+msgstr "查看更少转移"
 
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:72
 #, elixir-autogen, elixir-format
 msgid "View More Transfers"
-msgstr "查看更多转帐"
+msgstr "查看更多转移"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:39
 #, elixir-autogen, elixir-format
