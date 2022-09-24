@@ -56,7 +56,6 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   border-radius: 12px;
 
   @include media-breakpoint-up(md) {
-    min-width: 500px;
   }
 
   @include media-breakpoint-down(md) {
@@ -97,7 +96,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   display: grid;
   grid-template-columns: 0.6fr 0.9fr 0.9fr 0.9fr;
   padding-bottom: 12px;
-  padding-left:20px;
+  padding-left: 20px;
 
   @include media-breakpoint-down(sm) {
     grid-template-columns: 1fr 1fr;
@@ -149,7 +148,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
 
     &.market-cap-per-day {
       &::before {
-        background-color:$dashboard-line-color-market;
+        background-color: $dashboard-line-color-market;
       }
     }
 
@@ -161,7 +160,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   }
 
   .dashboard-banner-chart-legend-label {
-    color: $dashboard-banner-chart-legend-label-color;
+    color: #FFF;
     display: block;
     font-size: 12px;
     font-weight: 600;
@@ -197,6 +196,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   .gas-price-icon {
     position: relative;
     top: -2px;
+
     path {
       fill: $dashboard-line-color-price;
     }
@@ -216,7 +216,6 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
 
   // @include media-breakpoint-down(lg) {
   //   margin-top: 15px;
-  //   width: 550px;
   // }
 
   @include media-breakpoint-down(md) {
