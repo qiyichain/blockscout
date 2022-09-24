@@ -17,7 +17,7 @@ $navbar-logo-width: 100% !default;
   background-color: $header-background-color;
   position: relative;
   z-index: 100;
-  padding: 0.5rem 0.37rem 0;
+  padding: 0.5rem 0 0 0;
   display: block;
   box-shadow: unset;
   // 修改
@@ -302,11 +302,13 @@ $navbar-logo-width: 100% !default;
   width: 100%;
   margin-bottom: 0.5rem;
   max-width: 1280px;
+  
 }
 
 .navbar-container, .navbar-primary {
   @media (min-width: 992px) {
-    padding-right: 0;
+    padding-right: 6px;
+    padding-left: 6px;
   }
 }
 

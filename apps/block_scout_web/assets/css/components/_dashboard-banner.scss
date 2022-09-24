@@ -221,7 +221,7 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   @include media-breakpoint-down(md) {
     border-top-right-radius: 10px;
     height: auto;
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 0;
     max-width: 100%;
     padding: 20px 0 20px 20px;
