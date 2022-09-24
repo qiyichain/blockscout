@@ -62,7 +62,7 @@
                     @address.hash),
                     "data-test":
                     "token_hash_link"
-                  ) 
+                  )
                   %>
                 </dd>
               </dl>
@@ -136,7 +136,7 @@
                     (if name, do: name <> " | " <> implementation_address, else: implementation_address),
                     to: address_path(@conn, :show, implementation_address),
                     class: "contract-address"
-                  ) 
+                  )
                   %>
                 </dd>
               </dl>
@@ -160,7 +160,7 @@
                     data-placement="top"
                     data-toggle="tooltip"
                     data-html="true"
-                    title='<%= "@ " <> usd_value <> "/" <> gettext("Ether") %>'  
+                    title='<%= "@ " <> usd_value <> "/" <> gettext("Ether") %>'
                   >
                   </span>)
                 </span>
@@ -189,7 +189,7 @@
               <%= if @conn.request_path |> String.contains?("/transactions") do %>
                 <a href="#txs" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transaction-count">
                   <%= if @address.transactions_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= gettext("Transactions") %>
+                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= "笔" <> gettext("Transactions") %>
                   <% else %>
                     <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transactions...") %>
                   <% end %>
@@ -197,7 +197,7 @@
               <% else %>
                 <a href="<%= AccessHelpers.get_path(@conn, :address_transaction_path, :index, @address.hash)%>#txs" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transaction-count">
                   <%= if @address.token_transfers_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= gettext("Transactions") %>
+                    <%= Number.Delimit.number_to_delimited(@address.transactions_count, precision: 0) %> <%= "笔" <> gettext("Transactions") %>
                   <% else %>
                     <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transactions...") %>
                   <% end %>
@@ -216,7 +216,7 @@
               <%= if @conn.request_path |> String.contains?("/token-transfers") do %>
                 <a href="#transfers" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transfer-count">
                   <%= if @address.token_transfers_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%= gettext("Transfers") %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%= "次" <> gettext("Transfers") %>
                   <% else %>
                     <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
                   <% end %>
@@ -224,7 +224,7 @@
               <% else %>
                 <a href="<%= AccessHelpers.get_path(@conn, :address_token_transfers_path, :index, @address.hash)%>#transfers" class="page-link bs-label large btn-no-border-link-to-tems" data-selector="transfer-count">
                   <%= if @address.token_transfers_count do %>
-                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%= gettext("Transfers") %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %> <%="次" <>  gettext("Transfers") %>
                   <% else %>
                     <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
                   <% end %>
@@ -288,4 +288,4 @@
 <!-- Modal QR -->
 <%= render BlockScoutWeb.CommonComponentsView, "_modal_qr_code.html", qr_code: qr_code(@address), title: @address %>
 
-<%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %> 
+<%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
