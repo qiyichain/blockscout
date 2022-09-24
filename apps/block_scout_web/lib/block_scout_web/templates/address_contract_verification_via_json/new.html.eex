@@ -20,7 +20,7 @@
               </div>
             </div>
           </div>
-          <div class="smart-contract-form-group-tooltip">Drop all Solidity contract source files and JSON metadata file(s) created during contract compilation into the drop zone.</div>
+          <div class="smart-contract-form-group-tooltip"><% gettext("Drop sources and metadata JSON file or click here") %> </div>
         </div>
       </div>
 
