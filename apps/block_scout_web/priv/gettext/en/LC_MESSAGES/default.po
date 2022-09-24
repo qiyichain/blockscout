@@ -476,7 +476,7 @@ msgstr "奇异链，为数字世界服务的高性能许可链。"
 #: lib/block_scout_web/templates/block/overview.html.eex:216
 #, elixir-autogen, elixir-format
 msgid "Burnt Fees"
-msgstr "燃烧燃料"
+msgstr "销毁燃料"
 
 #: lib/block_scout_web/templates/address_token/overview.html.eex:65
 #, elixir-autogen, elixir-format
