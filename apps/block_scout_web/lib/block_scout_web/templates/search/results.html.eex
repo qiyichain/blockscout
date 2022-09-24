@@ -28,13 +28,13 @@
 			                    <div>&nbsp;</div>
 		                    </th>
                             <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Search Result</div>
+                                <div class="stakes-table-th-content">搜索结果</div>
                             </th>
                             <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Hash</div>
+                                <div class="stakes-table-th-content">哈希</div>
                             </th>
                             <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Category</div>
+                                <div class="stakes-table-th-content">分类</div>
                             </th>
                         </tr>
                     </thead>
