@@ -18,7 +18,7 @@
   <% end %>
   <%= if Chain.check_if_tokens_at_address(@address.hash) do %>
   <%= link(
-        gettext("Tokens"),
+        "所有" <> gettext("Tokens"),
         class: "card-tab #{tab_status("tokens", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :address_token_path, :index, @address.hash),
         "data-test": "tokens_tab_link"
