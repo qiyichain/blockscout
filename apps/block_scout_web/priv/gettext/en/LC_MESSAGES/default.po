@@ -40,18 +40,18 @@ msgstr "%{block_type} 高度"
 #: lib/block_scout_web/templates/block/index.html.eex:7
 #, elixir-autogen, elixir-format
 msgid "%{block_type}s"
-msgstr ""
+msgstr "区块"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:85
 #, elixir-autogen, elixir-format
 msgid "%{count} Transaction"
-msgstr "%{count} 交易"
+msgstr "%{count} 笔交易"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:87
 #: lib/block_scout_web/templates/chain/_block.html.eex:11
 #, elixir-autogen, elixir-format
 msgid "%{count} Transactions"
-msgstr ""
+msgstr "%{count} 笔交易"
 
 #: lib/block_scout_web/templates/chain/_metatags.html.eex:2
 #, elixir-autogen, elixir-format
