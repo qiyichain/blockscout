@@ -2602,7 +2602,7 @@ msgstr "NFT详情"
 #: lib/block_scout_web/views/tokens/overview_view.ex:40
 #, elixir-autogen, elixir-format
 msgid "Token Holders"
-msgstr "NFT持有账户"
+msgstr "NFT持有地址"
 
 #: lib/block_scout_web/templates/tokens/instance/overview/_details.html.eex:38
 #: lib/block_scout_web/templates/tokens/inventory/_token.html.eex:18
@@ -2725,7 +2725,7 @@ msgstr "区块中交易提供的燃料限制总和"
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:69
 #, elixir-autogen, elixir-format
 msgid "Total supply"
-msgstr "总供应量"
+msgstr "总量"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:337
 #, elixir-autogen, elixir-format
