@@ -48,21 +48,21 @@
               </div>
               <%= error_tag f, :verify_via, id: "verify_via-help-block", class: "text-danger form-error" %>
             </div>
-            <div class="smart-contract-form-group-tooltip">Choose a smart-contract verification method. Currently, Blockscout supports 2 methods:<br/>
-            1. Verification through flattened source code. <span
+            <div class="smart-contract-form-group-tooltip">选择智能合约验证的方式,目前奇异链区块浏览器支持4种方式:<br/>
+            1. 通过扁平化的Solidity代码进行验证(单文件). <span
                       data-toggle="tooltip"
                       data-placement="top"
                       data-html="true"
                       data-template="<div class='tooltip' role='tooltip'><div class='arrow'></div><div class='tooltip-inner'></div></div>"
-                      title="If using a flat file for contract verification, you can use the POA Solidity flattener or the Truffle flattener">
+                      title="可以使用truffle-flattener或者hardhat flatten工具对合约代码进行扁平化处理,将所有合约文件展开到一个文件,然后再提交验证.">
                       <i style="color: #f7b32b;" class="fa fa-info-circle ml-1" data-test="token-bridge-supply"></i></span><br/>
-            2. Verification using <a href="https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description">Standard input JSON</a> file.<br/>
-            3. Verification through <a href="https://sourcify.dev">Sourcify</a>.<br/>
-              a) if smart-contract already verified on Sourcify, it will automatically fetch the data from the <a href="https://repo.sourcify.dev">repo</a><br/>
-              b) otherwise you will be asked to upload source files and JSON metadata file(s).<br/>
-            4. Verification of Vyper contract.
+            2. 通过 <a href="https://docs.soliditylang.org/en/latest/using-the-compiler.html#input-description">标准输入JSON</a> 文件进行验证.<br/>
+            3. 通过 <a href="https://sourcify.dev">Sourcify</a>.<br/>
+              a) 如果合约已经再Sourcify上验证过, 奇异链区块浏览器会自动从 <a href="https://repo.sourcify.dev">这个项目</a>获取数据<br/>
+              b) 否则,你需要上传合约源码文件和元数据进行验证.<br/>
+            4. 验证 Vyper 合约.
             </div>
-              
+
           </div>
         </div>
 

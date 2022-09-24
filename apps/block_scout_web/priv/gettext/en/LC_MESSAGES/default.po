@@ -317,7 +317,7 @@ msgstr ""
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:21
 #, elixir-autogen, elixir-format
 msgid "Average"
-msgstr "平均"
+msgstr "-"
 
 #: lib/block_scout_web/templates/chain/show.html.eex:100
 #, elixir-autogen, elixir-format
@@ -510,7 +510,7 @@ msgstr ""
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:54
 #, elixir-autogen, elixir-format
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:41
 #, elixir-autogen, elixir-format
@@ -520,13 +520,13 @@ msgstr "联系我们"
 #: lib/block_scout_web/views/block_view.ex:63
 #, elixir-autogen, elixir-format
 msgid "Chore Reward"
-msgstr ""
+msgstr "奖励"
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:137
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:106
 #, elixir-autogen, elixir-format
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: lib/block_scout_web/templates/address/_validator_metadata_modal.html.eex:37
 #: lib/block_scout_web/templates/common_components/_modal_qr_code.html.eex:6
@@ -586,7 +586,7 @@ msgstr "已确认"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:124
 #, elixir-autogen, elixir-format
 msgid "Confirmed by "
-msgstr "确认区块数:"
+msgstr "确认数:"
 
 #: lib/block_scout_web/templates/transaction/overview.html.eex:190
 #, elixir-autogen, elixir-format
@@ -902,7 +902,7 @@ msgstr ""
 #: lib/block_scout_web/templates/chain/show.html.eex:69
 #, elixir-autogen, elixir-format
 msgid "Daily Transactions"
-msgstr "当日交易数"
+msgstr "今日交易"
 
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:101
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:7
@@ -1232,7 +1232,7 @@ msgstr "日志数据解码失败"
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:22
 #, elixir-autogen, elixir-format
 msgid "Fast"
-msgstr "快速"
+msgstr "快"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:247
 #, elixir-autogen, elixir-format
@@ -1368,7 +1368,7 @@ msgstr "哈希"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:458
 #, elixir-autogen, elixir-format
 msgid "Hex (Default)"
-msgstr "十六进制格式(默认)"
+msgstr "十六进制(默认)"
 
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:108
 #, elixir-autogen, elixir-format
@@ -1383,7 +1383,7 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:19
 #, elixir-autogen, elixir-format
 msgid "IMPORTANT: This information is a best guess based on similar functions from other verified contracts."
-msgstr "重要：这些信息已是最好的推测，基于其他类似的已验证的合约。"
+msgstr "注意：以下显示的信息是根据类似的已验证的合约进行推测的结果，可能不准确。"
 
 #: lib/block_scout_web/templates/internal_transaction/_tile.html.eex:42
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:92
@@ -2214,7 +2214,7 @@ msgstr "区块字节大小"
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:20
 #, elixir-autogen, elixir-format
 msgid "Slow"
-msgstr "较慢"
+msgstr "慢"
 
 #: lib/block_scout_web/templates/account/public_tags_request/index.html.eex:21
 #, elixir-autogen, elixir-format
@@ -2558,7 +2558,7 @@ msgstr ""
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:20
 #, elixir-autogen, elixir-format
 msgid "To have guaranteed accuracy, use the link above to verify the contract's source code."
-msgstr "为了保证准确性，使用以上链接验证合约代码"
+msgstr "为了保证准确性，请验证并发布合约代码。"
 
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:6
 #: lib/block_scout_web/templates/transaction/_decoded_input.html.eex:8
@@ -2999,12 +2999,12 @@ msgstr "通过Sourcify:合约代码和元数据"
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:27
 #, elixir-autogen, elixir-format
 msgid "Via Standard Input JSON"
-msgstr "通过标准输入Json"
+msgstr "通过标准输入JSON"
 
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:22
 #, elixir-autogen, elixir-format
 msgid "Via flattened source code"
-msgstr "通过合约代码"
+msgstr "通过扁平化的Solidity合约代码"
 
 #: lib/block_scout_web/templates/address_contract_verification/new.html.eex:40
 #, elixir-autogen, elixir-format
