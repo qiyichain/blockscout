@@ -97,7 +97,7 @@ let momentDefines = {
     }
 }
 
-moment.locale('zh-cn', defines)
+moment.locale('zh-cn', momentDefines)
 
 moment.relativeTimeThreshold('M', 12)
 moment.relativeTimeThreshold('d', 30)
