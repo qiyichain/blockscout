@@ -4,7 +4,7 @@
 <% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
 <div id="address-tabs" class="card-tabs js-card-tabs">
   <%= link(
-        gettext("Transactions"),
+        "所有" <> gettext("Transactions"),
         class: "card-tab #{tab_status("transactions", @conn.request_path)}",
         to: AccessHelpers.get_path(@conn, :address_transaction_path, :index, @address.hash)
       ) %>
