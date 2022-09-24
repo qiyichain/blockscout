@@ -2,8 +2,8 @@
 #, elixir-autogen, elixir-format
 msgid "%{count} token"
 msgid_plural "%{count} tokens"
-msgstr[0] "%{count} 个NFT"
-msgstr[1] "%{count} 个NFT"
+msgstr[0] "%{count} 种NFT"
+msgstr[1] "%{count} 种NFT"
 
 #: lib/block_scout_web/templates/block/_tile.html.eex:29
 #, elixir-autogen, elixir-format
