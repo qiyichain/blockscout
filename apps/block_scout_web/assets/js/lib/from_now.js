@@ -121,7 +121,7 @@ function updateAge (el, timestamp) {
   if ((window.location.pathname.includes('/tx/') || window.location.pathname.includes('/block/') || window.location.pathname.includes('/blocks/')) && !elInTile) {
     const offset = moment().utcOffset() / 60
     const sign = offset && Math.sign(offset) ? '+' : '-'
-    const formatDate = `MMMM-DD-YYYY hh:mm:ss A ${sign}${offset} UTC`
+    const formatDate = `YYYY-MM-DD hh:mm:ss UTC${sign}${offset} `
     fromNow = `${fromNow} | ${timestamp.format(formatDate)}`
   }
   if (fromNow !== el.innerHTML) el.innerHTML = fromNow
