@@ -13,7 +13,7 @@
 
         <div class="smart-contract-form-group">
           <div class="smart-contract-form-group-inner-wrapper">
-            <%= label f, "Verify" %>
+            <%= label f, "验证方式" %>
             <div class="center-column">
               <div class="form-radios-group vertical">
                 <div class="radio-big mb-3">
