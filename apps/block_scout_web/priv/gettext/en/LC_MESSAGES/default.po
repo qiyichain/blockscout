@@ -282,12 +282,12 @@ msgstr "查看所有"
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:13
 #, elixir-autogen, elixir-format
 msgid "All functions displayed below are from ABI of that contract. In order to verify current contract, proceed with"
-msgstr ""
+msgstr "以下是合约的ABI。验证当前合约,使用"
 
 #: lib/block_scout_web/templates/address_contract/index.html.eex:27
 #, elixir-autogen, elixir-format
 msgid "All metadata displayed below is from that contract. In order to verify current contract, click"
-msgstr ""
+msgstr "以下是合约的元数据。验证当前合约，请点击"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:174
 #, elixir-autogen, elixir-format
