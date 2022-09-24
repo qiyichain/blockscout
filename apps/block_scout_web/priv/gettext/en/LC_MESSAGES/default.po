@@ -2834,7 +2834,7 @@ msgstr "发送的交易"
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:119
 #, elixir-autogen, elixir-format
 msgid "Transfers"
-msgstr "转帐"
+msgstr "转账"
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:40
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:47

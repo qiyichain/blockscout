@@ -43,7 +43,7 @@ const elements = {
   '[token-transfer-count]': {
     render ($el, state) {
       if (state.transferCount) {
-        $el.empty().text(state.transferCount + ' 转帐')
+        $el.empty().text(state.transferCount + ' 转账')
         return $el.show()
       }
     }
