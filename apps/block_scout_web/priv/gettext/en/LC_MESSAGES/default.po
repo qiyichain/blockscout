@@ -902,7 +902,7 @@ msgstr ""
 #: lib/block_scout_web/templates/chain/show.html.eex:69
 #, elixir-autogen, elixir-format
 msgid "Daily Transactions"
-msgstr "日交易数"
+msgstr "当日交易数"
 
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:101
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:7
@@ -1303,7 +1303,7 @@ msgstr "燃料限制"
 #: lib/block_scout_web/templates/transaction/overview.html.eex:353
 #, elixir-autogen, elixir-format
 msgid "Gas Price"
-msgstr "燃料价格"
+msgstr "燃料单价"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:240
 #: lib/block_scout_web/templates/block/_tile.html.eex:73
@@ -1321,7 +1321,7 @@ msgstr "交易消耗的燃料"
 #: lib/block_scout_web/templates/chain/gas_price_oracle_legend_item.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "Gas tracker"
-msgstr "推荐燃料价"
+msgstr "燃料预测"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:239
 #, elixir-autogen, elixir-format
