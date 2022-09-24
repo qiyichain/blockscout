@@ -465,7 +465,7 @@ msgstr "区块已索引"
 #: lib/block_scout_web/views/address_view.ex:374
 #, elixir-autogen, elixir-format
 msgid "Blocks Validated"
-msgstr "区块已验证"
+msgstr "已验证区块"
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:22
 #, elixir-autogen, elixir-format
