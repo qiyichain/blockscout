@@ -790,7 +790,7 @@ msgstr "复制父区块哈希"
 #: lib/block_scout_web/templates/transaction_raw_trace/index.html.eex:15
 #, elixir-autogen, elixir-format
 msgid "Copy Raw Trace"
-msgstr "复制原始追踪"
+msgstr "复制原始Trace"
 
 #: lib/block_scout_web/templates/address_contract/index.html.eex:102
 #: lib/block_scout_web/templates/address_contract/index.html.eex:113
@@ -2024,7 +2024,7 @@ msgstr "原始输入"
 #: lib/block_scout_web/views/transaction_view.ex:515
 #, elixir-autogen, elixir-format
 msgid "Raw Trace"
-msgstr "原始追踪"
+msgstr "原始Trace"
 
 #: lib/block_scout_web/templates/address/_tabs.html.eex:81
 #: lib/block_scout_web/templates/tokens/overview/_tabs.html.eex:27
