@@ -47,7 +47,7 @@
                 </span>
               <% end %>
               <span class="mr-4"> <%= @token.type %> </span>
-              <span class="mr-4"><%= @total_token_transfers %> <%= gettext "Transfers" %></span>
+              <span class="mr-4"><%= @total_token_transfers %> <%= "次转移" %></span>
               <%= if decimals?(@token) do %>
                 <span class="mr-4"><%= @token.decimals %> <%= gettext "Decimals" %></span>
               <% end %>
