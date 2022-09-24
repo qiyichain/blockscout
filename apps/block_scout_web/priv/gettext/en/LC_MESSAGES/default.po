@@ -95,7 +95,7 @@ msgstr "验证节点."
 #: lib/block_scout_web/templates/address_contract_verification_via_multi_part_files/new.html.eex:86
 #, elixir-autogen, elixir-format
 msgid "A library name called in the .sol file. Multiple libraries (up to 5) may be added for each contract. Click the Add Library button to add an additional one."
-msgstr ""
+msgstr "在 .sol 文件中调用的库名.如果有多个库,请点击添加库合约进行添加."
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:73
 #, elixir-autogen, elixir-format
@@ -115,7 +115,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification_common_fields/_constructor_args.html.eex:3
 #, elixir-autogen, elixir-format
 msgid "ABI-encoded Constructor Arguments (if required by the contract)"
-msgstr ""
+msgstr "ABI-编码构造函数(如果合约需要的话)"
 
 #: lib/block_scout_web/templates/api_docs/index.html.eex:4
 #, elixir-autogen, elixir-format
@@ -1023,7 +1023,7 @@ msgstr "拖拽源码或者点击这里"
 #: lib/block_scout_web/templates/address_contract_verification_via_standard_json_input/new.html.eex:28
 #, elixir-autogen, elixir-format
 msgid "Drop the standard input JSON file or click here"
-msgstr "拖拽标准输入Json文件或者点击这里"
+msgstr "拖拽标准输入JSON文件或者点击这里"
 
 #: lib/block_scout_web/templates/transaction/not_found.html.eex:22
 #, elixir-autogen, elixir-format
@@ -1126,12 +1126,12 @@ msgstr "派发奖励"
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:68
 #, elixir-autogen, elixir-format
 msgid "Enter the Solidity Contract Code"
-msgstr "进入Solidity合约代码"
+msgstr "填入Solidity合约代码"
 
 #: lib/block_scout_web/templates/address_contract_verification_vyper/new.html.eex:22
 #, elixir-autogen, elixir-format
 msgid "Enter the Vyper Contract Code"
-msgstr "进入Vyper合约代码"
+msgstr "填入Vyper合约代码"
 
 #: lib/block_scout_web/templates/internal_transaction/_tile.html.eex:11
 #: lib/block_scout_web/templates/transaction/_decoded_input_body.html.eex:10
@@ -1689,7 +1689,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "Must match the name specified in the code. For example, in <span class=\"tooltip-quote\">contract MyContract {..}</span> <strong>MyContract</strong> is the contract name."
-msgstr ""
+msgstr "合约名必须和代码中的合约名保持一致. 例如, 合约代码为 <span class=\"tooltip-quote\">contract MyContract {..}</span> 那么 <strong>MyContract</strong> 就是合约名."
 
 #: lib/block_scout_web/templates/block/overview.html.eex:116
 #, elixir-autogen, elixir-format
@@ -1835,14 +1835,14 @@ msgstr "仅第一次"
 #: lib/block_scout_web/templates/address_contract/index.html.eex:61
 #, elixir-autogen, elixir-format
 msgid "Optimization enabled"
-msgstr ""
+msgstr "开启优化"
 
 #: lib/block_scout_web/templates/address_contract/index.html.eex:70
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:58
 #: lib/block_scout_web/templates/address_contract_verification_via_multi_part_files/new.html.eex:54
 #, elixir-autogen, elixir-format
 msgid "Optimization runs"
-msgstr ""
+msgstr "优化级别(Optimization runs)"
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:74
 #, elixir-autogen, elixir-format
@@ -1864,7 +1864,7 @@ msgstr "所有者地址"
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:73
 #, elixir-autogen, elixir-format
 msgid "POA solidity flattener or the"
-msgstr ""
+msgstr "hardhat flattener 或  "
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:19
 #: lib/block_scout_web/templates/api_docs/_eth_rpc_item.html.eex:26
@@ -2268,7 +2268,7 @@ msgstr "源码 *.sol 文件"
 #: lib/block_scout_web/templates/address_contract_verification_via_json/new.html.eex:14
 #, elixir-autogen, elixir-format
 msgid "Sources and Metadata JSON"
-msgstr "原始数据和元数据Json"
+msgstr "原始数据和元数据JSON"
 
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:125
 #, elixir-autogen, elixir-format
@@ -2278,7 +2278,7 @@ msgstr "质押"
 #: lib/block_scout_web/templates/address_contract_verification_via_standard_json_input/new.html.eex:24
 #, elixir-autogen, elixir-format
 msgid "Standard Input JSON"
-msgstr "标准输入Json"
+msgstr "标准输入JSON"
 
 #: lib/block_scout_web/views/internal_transaction_view.ex:24
 #, elixir-autogen, elixir-format
@@ -2348,7 +2348,7 @@ msgstr "区块高度"
 #: lib/block_scout_web/templates/address_contract_verification_via_multi_part_files/new.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "The compiler version is specified in <span class=\"tooltip-quote\">pragma solidity X.X.X</span>. Use the compiler version rather than the nightly build. If using the Solidity compiler, run <span class=\"tooltip-quote\">solc —version</span> to check."
-msgstr ""
+msgstr "编译器版本,请保持和你开发环境的编译版本一致"
 
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:38
 #, elixir-autogen, elixir-format
@@ -3285,4 +3285,4 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract_verification_via_flattened_code/new.html.eex:73
 #, elixir-autogen, elixir-format
 msgid "truffle flattener"
-msgstr ""
+msgstr "truffle-flattener"

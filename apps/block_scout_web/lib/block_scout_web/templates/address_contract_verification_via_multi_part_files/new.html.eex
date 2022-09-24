@@ -29,7 +29,7 @@
 
         <div class="smart-contract-form-group">
           <div class="smart-contract-form-group-inner-wrapper">
-            <%= label f, "Optimization" %>
+            <%= label f, "优化" %>
             <div class="center-column">
               <div class="form-radios-group">
                 <div class="radio-big">

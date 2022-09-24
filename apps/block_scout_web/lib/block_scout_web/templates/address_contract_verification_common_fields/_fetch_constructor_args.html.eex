@@ -1,6 +1,6 @@
 <div class="smart-contract-form-group">
   <div class="smart-contract-form-group-inner-wrapper">
-    <%= label @f, "Try to fetch constructor arguments automatically" %>
+    <%= label @f, "尝试自动获取合约构造参数" %>
     <div class="center-column">
       <div class="form-radios-group">
         <div class="radio-big">
