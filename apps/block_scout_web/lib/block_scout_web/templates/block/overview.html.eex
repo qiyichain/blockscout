@@ -9,7 +9,7 @@
         <div class="card-body fs-14" style="line-height: 32px;">
           <dl class="pagination-container">
             <h1 class="card-title" data-test="detail_type">
-              <%= gettext("Block") <> "Details" %>
+              <%= gettext("Block Details") %>
             </h1>
               <ul class="pagination">
                 <li class="page-item">
