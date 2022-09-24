@@ -111,7 +111,7 @@ export function updateAllAges ($container = $(document)) {
 function tryUpdateAge (el) {
   if (!el.dataset.fromNow) return
 
-  const timestamp = moment(el.dataset.fromNow, "zh-cn")
+  const timestamp = moment(el.dataset.fromNow, language="zh-cn")
   if (timestamp.isValid()) updateAge(el, timestamp)
 }
 function updateAge (el, timestamp) {
