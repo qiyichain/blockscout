@@ -6,7 +6,8 @@ import { appendTokenIcon } from './token_icon'
 import { escapeHtml } from './utils'
 import xss from 'xss'
 
-//const placeHolder = 'Search by address, token symbol, name, transaction hash, or block number'
+// const placeHolder = 'Search by address, token symbol, name, transaction hash, or block number'
+
 const placeHolder = '根据地址、交易哈希、NFT代号、NFT名称或区块高度进行搜索'
 const dataSrc = async (query, id) => {
   try {
@@ -14,7 +15,7 @@ const dataSrc = async (query, id) => {
     const searchInput = document
       .getElementById(id)
 
-    searchInput.setAttribute('placeholder', 'Loading...')
+    searchInput.setAttribute('placeholder', '加载中...')
 
     // Fetch External Data Source
     const source = await fetch(
@@ -38,9 +39,9 @@ const resultsListElement = (list, data) => {
   </div>`
   info.innerHTML = adv
   if (data.results.length > 0) {
-    info.innerHTML += `Displaying <strong>${data.results.length}</strong> results`
+    info.innerHTML += `显示 <strong>${data.results.length}</strong> 个结果`
   } else if (data.query !== '###') {
-    info.innerHTML += `Found <strong>${data.matches.length}</strong> matching results for <strong>"${data.query}"</strong>`
+    info.innerHTML += `匹配到 <strong>${data.matches.length}</strong> 个结果, 根据 <strong>"${data.query}"</strong>`
   }
 
   list.prepend(info)
@@ -71,7 +72,7 @@ export const searchEngine = (query, record) => {
         searchResult += ` (${escapeHtml(record.symbol)})`
       }
       if (record.holder_count) {
-        searchResult += ` <i>${record.holder_count} holder(s)</i>`
+        searchResult += ` <i>${record.holder_count} 个持有地址</i>`
       }
       if (record.inserted_at) {
         searchResult += ` (${DateTime.fromISO(record.inserted_at).toLocaleString(DateTime.DATETIME_SHORT)})`
