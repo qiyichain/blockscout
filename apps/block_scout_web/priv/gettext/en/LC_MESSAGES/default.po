@@ -1632,7 +1632,7 @@ msgstr "元数据(Metadata)"
 #: lib/block_scout_web/templates/transaction/_decoded_input_body.html.eex:5
 #, elixir-autogen, elixir-format
 msgid "Method Id"
-msgstr "方法Id"
+msgstr "方法ID"
 
 #: lib/block_scout_web/templates/block/_tile.html.eex:41
 #: lib/block_scout_web/templates/block/overview.html.eex:98
@@ -1830,7 +1830,7 @@ msgstr "转出"
 #: lib/block_scout_web/templates/common_components/_rap_pagination_container.html.eex:13
 #, elixir-autogen, elixir-format
 msgid "Only the first"
-msgstr "仅第一次"
+msgstr "仅显示最新"
 
 #: lib/block_scout_web/templates/address_contract/index.html.eex:61
 #, elixir-autogen, elixir-format
@@ -3214,7 +3214,7 @@ msgstr "不包含ERC721或ERC1155的NFT"
 #: lib/block_scout_web/templates/common_components/_rap_pagination_container.html.eex:13
 #, elixir-autogen, elixir-format
 msgid "elements are displayed"
-msgstr "已显示"
+msgstr "笔交易"
 
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:38
 #, elixir-autogen, elixir-format
