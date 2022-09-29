@@ -24,7 +24,7 @@
         <p class="footer-info-text"><%= gettext("奇异链采用最流行的编程语言，提供最完备的技术文档支持，兼容最大吞吐量的技术架构，方便创造者、开发者快速打造自己的数字应用，助力每个创造者、企业和组织在数字世界里成就奇异") %></p>
       </div>
       -->
-      <p class="footer-info-text"><%= gettext("@2022 QiyiChain. All Rights Reserved.") %></p>
+      <p class="footer-info-text"><%= gettext("@2022 QiyiChain. All Rights Reserved.") <> "(version:" <> version() <> ")" %> </p>
     </div>
   </div>
 </footer>
