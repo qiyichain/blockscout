@@ -2984,7 +2984,7 @@ msgstr "验证并发布"
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:10
 #, elixir-autogen, elixir-format
 msgid "Verify the contract "
-msgstr "验证合约点击:"
+msgstr "验证合约请点击: "
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:89
 #, elixir-autogen, elixir-format
