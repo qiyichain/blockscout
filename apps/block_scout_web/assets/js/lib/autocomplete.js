@@ -8,7 +8,7 @@ import xss from 'xss'
 
 // const placeHolder = 'Search by address, token symbol, name, transaction hash, or block number'
 
-const placeHolder = '根据地址、交易哈希、NFT代号、NFT名称或区块高度进行搜索'
+const placeHolder = '根据账户地址、交易哈希、NFT名称或区块高度进行搜索'
 const dataSrc = async (query, id) => {
   try {
     // Loading placeholder text

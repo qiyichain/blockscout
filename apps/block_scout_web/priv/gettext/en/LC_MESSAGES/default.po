@@ -2143,7 +2143,7 @@ msgstr "搜索结果"
 #: lib/block_scout_web/templates/layout/_search.html.eex:3
 #, elixir-autogen, elixir-format
 msgid "Search by address, token symbol name, transaction hash, or block number"
-msgstr "根据地址、交易哈希、NFT代号、NFT名称或区块高度进行搜索"
+msgstr "根据账户地址、交易哈希、NFT名称或区块高度进行搜索"
 
 #: lib/block_scout_web/templates/address_token_balance/_token_balances.html.eex:47
 #, elixir-autogen, elixir-format
@@ -2850,7 +2850,7 @@ msgstr "推特"
 #: lib/block_scout_web/templates/layout/app.html.eex:49
 #, elixir-autogen, elixir-format
 msgid "Tx/day"
-msgstr "笔交易/天"
+msgstr "交易数"
 
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:5
 #: lib/block_scout_web/templates/transaction/_decoded_input_body.html.eex:22
