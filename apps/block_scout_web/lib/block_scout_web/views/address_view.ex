@@ -439,7 +439,7 @@ defmodule BlockScoutWeb.AddressView do
   def address_page_title(address) do
     cond do
       smart_contract_verified?(address) -> "#{address.smart_contract.name} (#{to_string(address)})"
-      contract?(address) -> "Contract #{to_string(address)}"
+      contract?(address) -> gettext("Contract")<>"#{to_string(address)}"
       true -> "#{to_string(address)}"
     end
   end

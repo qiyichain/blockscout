@@ -282,12 +282,12 @@ msgstr "查看所有"
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:13
 #, elixir-autogen, elixir-format
 msgid "All functions displayed below are from ABI of that contract. In order to verify current contract, proceed with"
-msgstr ""
+msgstr "以下是合约的ABI。验证当前合约,使用"
 
 #: lib/block_scout_web/templates/address_contract/index.html.eex:27
 #, elixir-autogen, elixir-format
 msgid "All metadata displayed below is from that contract. In order to verify current contract, click"
-msgstr ""
+msgstr "以下是合约的元数据。验证当前合约，请点击"
 
 #: lib/block_scout_web/templates/address/overview.html.eex:174
 #, elixir-autogen, elixir-format
@@ -465,7 +465,7 @@ msgstr "区块已索引"
 #: lib/block_scout_web/views/address_view.ex:374
 #, elixir-autogen, elixir-format
 msgid "Blocks Validated"
-msgstr "区块已验证"
+msgstr "已验证区块"
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:22
 #, elixir-autogen, elixir-format
@@ -891,7 +891,7 @@ msgstr "自定义"
 #: lib/block_scout_web/templates/layout/_account_menu_item.html.eex:18
 #, elixir-autogen, elixir-format
 msgid "Custom ABI"
-msgstr ""
+msgstr "自定义ABI"
 
 #: lib/block_scout_web/templates/address_read_contract/index.html.eex:25
 #: lib/block_scout_web/templates/address_write_contract/index.html.eex:23
@@ -902,7 +902,7 @@ msgstr ""
 #: lib/block_scout_web/templates/chain/show.html.eex:69
 #, elixir-autogen, elixir-format
 msgid "Daily Transactions"
-msgstr "今日交易"
+msgstr "昨日交易"
 
 #: lib/block_scout_web/templates/address_logs/_logs.html.eex:101
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:7
@@ -1437,7 +1437,7 @@ msgstr "交易在区块中的位置"
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:6
 #, elixir-autogen, elixir-format
 msgid "Indexed?"
-msgstr ""
+msgstr "是否索引(Indexed)"
 
 #: lib/block_scout_web/templates/layout/app.html.eex:44
 #, elixir-autogen, elixir-format
@@ -1632,7 +1632,7 @@ msgstr "元数据(Metadata)"
 #: lib/block_scout_web/templates/transaction/_decoded_input_body.html.eex:5
 #, elixir-autogen, elixir-format
 msgid "Method Id"
-msgstr "方法Id"
+msgstr "方法ID"
 
 #: lib/block_scout_web/templates/block/_tile.html.eex:41
 #: lib/block_scout_web/templates/block/overview.html.eex:98
@@ -1670,7 +1670,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_internal_transaction/index.html.eex:12
 #, elixir-autogen, elixir-format
 msgid "More internal transactions have come in"
-msgstr "更多内部交易已经上链"
+msgstr "笔内部交易已经上链"
 
 #: lib/block_scout_web/templates/address_transaction/index.html.eex:46
 #: lib/block_scout_web/templates/chain/show.html.eex:216
@@ -1678,7 +1678,7 @@ msgstr "更多内部交易已经上链"
 #: lib/block_scout_web/templates/transaction/index.html.eex:19
 #, elixir-autogen, elixir-format
 msgid "More transactions have come in"
-msgstr "更多交易已经上链"
+msgstr "笔交易已经上链"
 
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:63
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:74
@@ -1830,7 +1830,7 @@ msgstr "转出"
 #: lib/block_scout_web/templates/common_components/_rap_pagination_container.html.eex:13
 #, elixir-autogen, elixir-format
 msgid "Only the first"
-msgstr "仅第一次"
+msgstr "仅显示最新"
 
 #: lib/block_scout_web/templates/address_contract/index.html.eex:61
 #, elixir-autogen, elixir-format
@@ -1854,7 +1854,7 @@ msgstr "其他区块浏览器"
 #: lib/block_scout_web/templates/account/watchlist_address/form.html.eex:61
 #, elixir-autogen, elixir-format
 msgid "Outgoing"
-msgstr ""
+msgstr "转出"
 
 #: lib/block_scout_web/templates/tokens/inventory/_token.html.eex:24
 #, elixir-autogen, elixir-format
@@ -2143,7 +2143,7 @@ msgstr "搜索结果"
 #: lib/block_scout_web/templates/layout/_search.html.eex:3
 #, elixir-autogen, elixir-format
 msgid "Search by address, token symbol name, transaction hash, or block number"
-msgstr "根据地址、交易哈希、NFT代号、NFT名称或区块高度进行搜索"
+msgstr "根据账户地址、交易哈希、NFT名称或区块高度进行搜索"
 
 #: lib/block_scout_web/templates/address_token_balance/_token_balances.html.eex:47
 #, elixir-autogen, elixir-format
@@ -2353,7 +2353,7 @@ msgstr "编译器版本,请保持和你开发环境的编译版本一致"
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:38
 #, elixir-autogen, elixir-format
 msgid "The fallback function is executed on a call to the contract if none of the other functions match the given function signature, or if no data was supplied at all and there is no receive Ether function. The fallback function always receives data, but in order to also receive Ether it must be marked payable."
-msgstr ""
+msgstr "fallback函数是在没有匹配调用函数时被调用"
 
 #: lib/block_scout_web/templates/block/overview.html.eex:138
 #, elixir-autogen, elixir-format
@@ -2378,7 +2378,7 @@ msgstr "区块包含的交易数量"
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:40
 #, elixir-autogen, elixir-format
 msgid "The receive function is executed on a call to the contract with empty calldata. This is the function that is executed on plain Ether transfers (e.g. via .send() or .transfer()). If no such function exists, but a payable fallback function exists, the fallback function will be called on a plain Ether transfer. If neither a receive Ether nor a payable fallback function is present, the contract cannot receive Ether through regular transactions and throws an exception."
-msgstr ""
+msgstr "receive函数用来接收转账"
 
 #: lib/block_scout_web/templates/page_not_found/index.html.eex:8
 #, elixir-autogen, elixir-format
@@ -2850,7 +2850,7 @@ msgstr "推特"
 #: lib/block_scout_web/templates/layout/app.html.eex:49
 #, elixir-autogen, elixir-format
 msgid "Tx/day"
-msgstr "笔交易/天"
+msgstr "交易数"
 
 #: lib/block_scout_web/templates/log/_data_decoded_view.html.eex:5
 #: lib/block_scout_web/templates/transaction/_decoded_input_body.html.eex:22
@@ -2984,7 +2984,7 @@ msgstr "验证并发布"
 #: lib/block_scout_web/templates/transaction_log/_logs.html.eex:10
 #, elixir-autogen, elixir-format
 msgid "Verify the contract "
-msgstr "验证合约点击:"
+msgstr "验证合约请点击: "
 
 #: lib/block_scout_web/templates/layout/_footer.html.eex:89
 #, elixir-autogen, elixir-format
@@ -3214,7 +3214,7 @@ msgstr "不包含ERC721或ERC1155的NFT"
 #: lib/block_scout_web/templates/common_components/_rap_pagination_container.html.eex:13
 #, elixir-autogen, elixir-format
 msgid "elements are displayed"
-msgstr "已显示"
+msgstr "笔交易"
 
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:38
 #, elixir-autogen, elixir-format
