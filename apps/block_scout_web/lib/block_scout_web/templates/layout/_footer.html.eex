@@ -25,7 +25,7 @@
       </div>
       -->
       <p class="footer-info-text">
-        <a class="btn btn-line"  href="https://beian.miit.gov.cn/#/Integrated/index"><%= gettext "粤ICP备2021024711号"%></a>
+        <a href="https://beian.miit.gov.cn/#/Integrated/index"><%= gettext "粤ICP备2021024711号"%></a>
         <span>
           <%= gettext(" | 区块链备案 粤网信备44030521303439560013号") %>
         </span>
