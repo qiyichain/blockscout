@@ -18,6 +18,8 @@
 
 先设置必要的环境换变量，在运行mix相关命令
 
+示例环境变量: [example-bashrc](./example-bashrc)
+
 主要的命令如下：
 
 ```shell

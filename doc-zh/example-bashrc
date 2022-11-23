@@ -1,0 +1,64 @@
+#.bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+. "$HOME/.cargo/env"
+
+export PATH=$PATH:/opt/elixir/bin/:/usr/local/nodejs/bin/
+
+
+
+export DATABASE_URL=postgresql://{用户}:{密码}@localhost:5432/{数据库名}?ssl=false
+
+export ETHEREUM_JSONRPC_VARIANT=geth
+export ETHEREUM_JSONRPC_HTTP_URL=http://{归档节点ip}:8545
+export COIN=QYC
+export NETWORK=测试网
+export COIN_NAME=QYC
+export SUBNETWORK=奇异链
+export ETHEREUM_JSONRPC_WS_URL="ws://{归档节点的ip}:8546"
+export ETHEREUM_JSONRPC_TRACE_URL="http://{归档节点的ip}:8545"
+export CACHE_TXS_COUNT_PERIOD=180
+export LINK_TO_OTHER_EXPLORERS=false
+export RUST_BACKTRACE=1
+export SECRET_KEY_BASE="VTIB3uHDNbvrY0+60ZWgUoUBKDn9ppLR8MI4CpRz4/qLyEFs54ktJfaNT6Z221No"
+
+# 合约验证相关
+export ENABLE_SOURCIFY_INTEGRATION=true
+export CHAIN_ID=12285
+
+# https://docs.blockscout.com/for-developers/developer-faqs/how-do-i-update-memory-consumption-to-fix-indexer-memory-errors
+#索引内存大小随着交易量增加而增加，以太坊主网30G
+# 10即10.7GB
+export INDEXER_MEMORY_LIMIT=10
+export ENABLE_RUST_VERIFICATION_SERVICE=true
+export RUST_VERIFICATION_SERVICE_URL=localhost:8043
+export SMART_CONTRACT_VERIFIER__CONFIG="/root/data/blockscout-rs/smart-contract-verifier-http/config/base.toml"
+export ENABLE_SOURCIFY_INTEGRATION=true
+export SOURCIFY_SERVER_URL=https://sourcify.dev/server
+export SOURCIFY_REPO_URL=https://repo.sourcify.dev/contracts/
+export ALLOWED_EVM_VERSIONS='homestead, tangerineWhistle, spuriousDragon, byzantium, constantinople, petersburg, istanbul, berlin, london, default'
+export CACHE_BLOCK_COUNT_PERIOD=7200
+export CACHE_TXS_COUNT_PERIOD=7200
+export TOKEN_METADATA_UPDATE_INTERVAL=86400
+export TOKEN_BALANCE_ON_DEMAND_FETCHER_THRESHOLD_MINUTES=10
+export COIN_BALANCE_ON_DEMAND_FETCHER_THRESHOLD_MINUTES=10
+export BLOCKSCOUT_VERSION=v2.0.3
+
+export PATH=/root/.cache/rebar3/bin:$PATH
+
+alias regen='cd apps/block_scout_web/assets && node_modules/webpack/bin/webpack.js --mode production && cd .. && mix phx.digest && cd ../.. '
+
+
+
+alias connpgsql='pgcli -h localhost -p 5432 -U postgres -d blockscout'
+
+
