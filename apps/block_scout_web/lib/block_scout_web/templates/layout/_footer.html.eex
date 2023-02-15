@@ -30,7 +30,7 @@
           <%= gettext(" | 区块链备案 粤网信备44030521303439560013号") %>
         </span>
       </p>
-      <p class="footer-info-text"><%= gettext("@2022 QiyiChain. All Rights Reserved.") <> "(version:" <> version() <> ")" %> </p>
+      <p class="footer-info-text"><%= gettext("@2023 QiyiChain. All Rights Reserved.") <> "(version:" <> version() <> ")" %> </p>
     </div>
   </div>
 </footer>
