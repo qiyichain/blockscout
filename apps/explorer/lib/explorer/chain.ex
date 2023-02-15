@@ -81,7 +81,7 @@ defmodule Explorer.Chain do
 
   @default_paging_options %PagingOptions{page_size: 50}
 
-  @max_incoming_transactions_count 10_000
+  @max_incoming_transactions_count 1_000
 
   @revert_msg_prefix_1 "Revert: "
   @revert_msg_prefix_2 "revert: "
@@ -97,7 +97,7 @@ defmodule Explorer.Chain do
   # seconds
   @check_bytecode_interval 86_400
 
-  @limit_showing_transactions 10_000
+  @limit_showing_transactions 1_000
   @default_page_size 50
 
   @typedoc """
