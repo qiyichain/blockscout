@@ -40,7 +40,7 @@ config :block_scout_web, BlockScoutWeb.SocialMedia,
 
 config :block_scout_web, BlockScoutWeb.Chain.TransactionHistoryChartController,
   # days
-  history_size: 7
+  history_size: 30
 
 config :ex_cldr,
   default_locale: "en",
