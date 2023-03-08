@@ -6,7 +6,7 @@ defmodule BlockScoutWeb.Chain.TransactionHistoryChartController do
   require Logger
 
   def show(conn, _params) do
-    Logger.error(fn -> "==========TXS-HISTORY-CHART-SHOW-START=============" end)
+    Logger.info(fn -> "==========TXS-HISTORY-CHART-SHOW-START=============" end)
     if ajax?(conn) do
       [{:history_size, history_size}] = Application.get_env(:block_scout_web, __MODULE__, 30)
 
@@ -27,7 +27,7 @@ defmodule BlockScoutWeb.Chain.TransactionHistoryChartController do
     else
       unprocessable_entity(conn)
     end
-    Logger.error(fn -> "==========TXS-HISTORY-CHART-SHOW-END=============" end)
+    Logger.info(fn -> "==========TXS-HISTORY-CHART-SHOW-END=============" end)
   end
 
   defp extract_history(db_results) do

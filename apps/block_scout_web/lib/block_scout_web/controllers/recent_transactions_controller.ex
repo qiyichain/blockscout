@@ -11,7 +11,7 @@ defmodule BlockScoutWeb.RecentTransactionsController do
   @burn_address_hash burn_address_hash
 
   def index(conn, _params) do
-    Logger.error(fn -> "==========RECENT_TXS-INDEX-START=============" end)
+    Logger.info(fn -> "==========RECENT_TXS-INDEX-START=============" end)
     if ajax?(conn) do
       recent_transactions =
         Chain.recent_collated_transactions(
@@ -44,6 +44,6 @@ defmodule BlockScoutWeb.RecentTransactionsController do
     else
       unprocessable_entity(conn)
     end
-  Logger.error(fn -> "==========RECENT_TXS-INDEX-END=============" end)
+    Logger.info(fn -> "==========RECENT_TXS-INDEX-END=============" end)
   end
 end
