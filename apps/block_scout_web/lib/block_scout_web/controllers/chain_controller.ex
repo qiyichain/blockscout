@@ -17,10 +17,10 @@ defmodule BlockScoutWeb.ChainController do
   alias Phoenix.View
 
   def show(conn, _params) do
-    transaction_estimated_count = TransactionCache.estimated_count()
-    total_gas_usage = GasUsage.total()
+    transaction_estimated_count = 1000000 # TransactionCache.estimated_count()
+    total_gas_usage = 100234243 #GasUsage.total()
     block_count = BlockCache.estimated_count()
-    address_count = Chain.address_estimated_count()
+    address_count = 1987423 #Chain.address_estimated_count()
 
     market_cap_calculation =
       case Application.get_env(:explorer, :supply) do
@@ -31,7 +31,7 @@ defmodule BlockScoutWeb.ChainController do
           :standard
       end
 
-    exchange_rate = Market.get_exchange_rate(Explorer.coin()) || Token.null()
+    exchange_rate = nil #Market.get_exchange_rate(Explorer.coin()) || Token.null()
 
     transaction_stats = get_transaction_stats()
 
