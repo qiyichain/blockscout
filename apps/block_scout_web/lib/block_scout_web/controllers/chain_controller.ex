@@ -36,7 +36,7 @@ defmodule BlockScoutWeb.ChainController do
     transaction_stats = get_transaction_stats()
 
     chart_data_paths = %{
-      market: market_history_chart_path(conn, :show),
+      # market: market_history_chart_path(conn, :show),
       transaction: transaction_history_chart_path(conn, :show)
     }
 
