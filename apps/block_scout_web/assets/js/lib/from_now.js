@@ -97,7 +97,7 @@ let momentDefines = {
     }
 }
 
-moment.locale('zh-cn', momentDefines)
+moment.defineLocale('zh-cn', momentDefines)
 
 moment.relativeTimeThreshold('M', 12)
 moment.relativeTimeThreshold('d', 30)
@@ -112,7 +112,7 @@ export function updateAllAges ($container = $(document)) {
 }
 function tryUpdateAge (el) {
 
-  moment.locale('zh-cn', momentDefines)
+  moment.updateLocale('zh-cn', momentDefines)
   if (!el.dataset.fromNow) return
 
   const timestamp = moment(el.dataset.fromNow)
