@@ -48,6 +48,7 @@ defmodule BlockScoutWeb.ChainController do
 
     chart_config = Application.get_env(:block_scout_web, :chart_config, %{})
 
+    Logger.info(fn -> "==========CHAINS-SHOW-END=============" end)
     render(
       conn,
       "show.html",
@@ -66,7 +67,6 @@ defmodule BlockScoutWeb.ChainController do
       gas_price: Application.get_env(:block_scout_web, :gas_price)
     )
 
-    Logger.info(fn -> "==========CHAINS-SHOW-START=============" end)
   end
 
   def get_transaction_stats do
