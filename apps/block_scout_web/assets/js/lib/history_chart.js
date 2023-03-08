@@ -312,14 +312,14 @@ export function createMarketHistoryChart (el) {
     $.getJSON(dataPaths[historySource], { type: 'JSON' })
       .done(data => {
         switch (historySource) {
-          case 'market': {
-            const availableSupply = JSON.parse(data.supply_data)
-            const marketHistoryData = humps.camelizeKeys(JSON.parse(data.history_data))
+        //   case 'market': {
+        //     const availableSupply = JSON.parse(data.supply_data)
+        //     const marketHistoryData = humps.camelizeKeys(JSON.parse(data.history_data))
 
-            $(el).show()
-            chart.updateMarketHistory(availableSupply, marketHistoryData)
-            break
-          }
+        //     $(el).show()
+        //     chart.updateMarketHistory(availableSupply, marketHistoryData)
+        //     break
+        //   }
           case 'transaction': {
             const txsHistoryData = JSON.parse(data.history_data)
 

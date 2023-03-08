@@ -33,7 +33,7 @@ defmodule BlockScoutWeb.Chain.MarketHistoryChartController do
     if ajax?(conn) do
       json(conn, %{
         history_data: [],
-        supply_data: []
+        supply_data: 0
       })
     else
       unprocessable_entity(conn)
