@@ -4,11 +4,14 @@ defmodule BlockScoutWeb.RecentTransactionsController do
   alias Explorer.{Chain, PagingOptions}
   alias Explorer.Chain.Hash
   alias Phoenix.View
+  require Logger
+
 
   {:ok, burn_address_hash} = Chain.string_to_address_hash("0x0000000000000000000000000000000000000000")
   @burn_address_hash burn_address_hash
 
   def index(conn, _params) do
+    Logger.error(fn -> "==========RECENT_TXS-INDEX-START=============" end)
     if ajax?(conn) do
       recent_transactions =
         Chain.recent_collated_transactions(
@@ -41,5 +44,6 @@ defmodule BlockScoutWeb.RecentTransactionsController do
     else
       unprocessable_entity(conn)
     end
+  Logger.error(fn -> "==========RECENT_TXS-INDEX-END=============" end)
   end
 end

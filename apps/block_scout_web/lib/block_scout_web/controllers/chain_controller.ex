@@ -16,7 +16,13 @@ defmodule BlockScoutWeb.ChainController do
   alias Explorer.Market
   alias Phoenix.View
 
+  require Logger
+
+
   def show(conn, _params) do
+
+    Logger.error(fn -> "==========CHAINS-SHOW-START=============" end)
+
     transaction_estimated_count = 1000000 # TransactionCache.estimated_count()
     total_gas_usage = 100234243 #GasUsage.total()
     block_count = BlockCache.estimated_count()
@@ -59,6 +65,8 @@ defmodule BlockScoutWeb.ChainController do
       block_count: block_count,
       gas_price: Application.get_env(:block_scout_web, :gas_price)
     )
+
+    Logger.error(fn -> "==========CHAINS-SHOW-START=============" end)
   end
 
   def get_transaction_stats do
