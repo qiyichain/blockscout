@@ -40,10 +40,10 @@ defmodule BlockScoutWeb.RecentTransactionsController do
           }
         end)
 
+      Logger.info(fn -> "==========RECENT_TXS-INDEX-END=============" end)
       json(conn, %{transactions: transactions})
     else
       unprocessable_entity(conn)
     end
-    Logger.info(fn -> "==========RECENT_TXS-INDEX-END=============" end)
   end
 end

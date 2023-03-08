@@ -21,13 +21,13 @@ defmodule BlockScoutWeb.Chain.TransactionHistoryChartController do
         |> extract_history
         |> encode_transaction_history_data
 
+      Logger.info(fn -> "==========TXS-HISTORY-CHART-SHOW-END=============" end)
       json(conn, %{
         history_data: transaction_history_data
       })
     else
       unprocessable_entity(conn)
     end
-    Logger.info(fn -> "==========TXS-HISTORY-CHART-SHOW-END=============" end)
   end
 
   defp extract_history(db_results) do
