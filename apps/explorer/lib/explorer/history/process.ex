@@ -65,14 +65,15 @@ defmodule Explorer.History.Process do
 
   @spec failed_compilation(non_neg_integer(), module(), non_neg_integer()) :: any()
   defp failed_compilation(day_count, historian, failed_attempts) do
-    Logger.warn(fn -> "Failed to fetch market history. Trying again." end)
-    compile_historical_records(day_count, historian, failed_attempts + 1)
+    Logger.warn(fn -> "Failed to compile_historical_records. Trying again." end)
+    # compile_historical_records(day_count, historian, failed_attempts + 1)
+    compile_historical_records(day_count, historian, failed_attempts )
   end
 
   @spec compile_historical_records(non_neg_integer(), module(), non_neg_integer()) :: Task.t()
   defp compile_historical_records(day_count, historian, failed_attempts \\ 0) do
     Task.Supervisor.async_nolink(Explorer.HistoryTaskSupervisor, fn ->
-      Process.sleep(delay(failed_attempts))
+      # Process.sleep(delay(failed_attempts))
       {day_count, failed_attempts, historian.compile_records(day_count)}
     end)
   end
