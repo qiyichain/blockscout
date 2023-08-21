@@ -7,6 +7,4 @@
         to: AccessHelpers.get_path(@conn, :token_path, :show, @token.contract_address_hash)
       )
     %>
- 
-  <% end %>
 </div>
