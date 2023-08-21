@@ -167,17 +167,7 @@
               <% end %>
             </dd>
           </dl>
-          <!-- Tokens -->
-          <dl class="row" data-test="outside_of_dropdown">
-            <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
-              <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-              text: gettext("All tokens in the account and total value.") %>
-              <%= gettext("Tokens") %>
-            </dt>
-            <dd class="col-sm-8 col-md-8 col-lg-9" data-test="address_tokens" data-selector="balance-card">
-              <%= render BlockScoutWeb.AddressView, "_balance_dropdown.html", conn: @conn, address: @address %>
-            </dd>
-          </dl>
+        
           <!-- Transaction count -->
           <dl class="row address-transactions-count-item">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
