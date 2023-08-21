@@ -7,19 +7,6 @@
         to: AccessHelpers.get_path(@conn, :token_path, :show, @token.contract_address_hash)
       )
     %>
-  <%= link(
-        gettext("Token Holders"),
-        class: "card-tab #{tab_status("token-holders", @conn.request_path)}",
-        "data-test": "token_holders_tab",
-        to: AccessHelpers.get_path(@conn, :token_holder_path, :index, address_hash)
-      )
-    %>
-  <%= if display_inventory?(@token) do %>
-    <%= link(
-          gettext("Inventory"),
-          class: "card-tab #{tab_status("inventory", @conn.request_path)}",
-          to: AccessHelpers.get_path(@conn, :token_inventory_path, :index, address_hash)
-        )
-    %>
+ 
   <% end %>
 </div>

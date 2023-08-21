@@ -7,7 +7,7 @@ defmodule BlockScoutWeb.AddressTokenBalanceView do
   alias Explorer.Counters.AddressTokenUsdSum
 
   def tokens_count_title(token_balances) do
-    ngettext("%{count} token", "%{count} tokens", Enum.count(token_balances))
+    ngettext("%{count} token", "%{count} tokens", 0)
   end
 
   def filter_by_type(token_balances, type) do
