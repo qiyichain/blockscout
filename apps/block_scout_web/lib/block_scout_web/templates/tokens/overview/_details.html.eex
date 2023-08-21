@@ -54,10 +54,10 @@
             <dd class="col-sm-8 col-md-8 col-lg-9 contract-address">
               <%= link(
                   @token.contract_address_hash,
-                  to: AccessHelpers.get_path(@conn, :address_path, :show, 
+                  to: AccessHelpers.get_path(@conn, :address_path, :show,
                   Address.checksum(@token.contract_address_hash)),
                   "data-test": "token_contract_address"
-                  ) 
+                  )
               %>
             </dd>
           </dl>
@@ -98,20 +98,10 @@
                     <span data-selector="token-price" data-usd-value="<%= @token.usd_value %>"></span>
                   </dd>
                 </dl>
-              <% end %>  
+              <% end %>
             <% end %>
           <% end %>
-          <dl class="row">
-            <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
-              <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-              text: gettext("Number of accounts holding the token") %>
-              <%= gettext("Holders") %>
-            </dt>
-            <dd class="col-sm-8 col-md-8 col-lg-9">
-              <% link = if @conn.request_path |> String.contains?("/token-holders"), do: "", else: AccessHelpers.get_path(@conn, :token_holder_path, :index, @token.contract_address_hash) %>
-              <a href="<%= link %>#holders" class="page-link bs-label large btn-no-border-link-to-tems" token-holder-count><%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching holders...") %></a>
-            </dd>
-          </dl>
+         
           <dl class="row">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
@@ -134,7 +124,7 @@
                 <%= @token.decimals %>
               </dd>
             </dl>
-          <% end %>  
+          <% end %>
           <dl class="row">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",

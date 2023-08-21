@@ -71,9 +71,9 @@ export const searchEngine = (query, record) => {
       if (record.symbol) {
         searchResult += ` (${escapeHtml(record.symbol)})`
       }
-      if (record.holder_count) {
-        searchResult += ` <i>${record.holder_count} 个持有地址</i>`
-      }
+    //   if (record.holder_count) {
+    //     searchResult += ` <i>${record.holder_count} 个持有地址</i>`
+    //   }
       if (record.inserted_at) {
         searchResult += ` (${DateTime.fromISO(record.inserted_at).toLocaleString(DateTime.DATETIME_SHORT)})`
       }
