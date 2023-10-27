@@ -174,26 +174,26 @@ function getTxHistoryData (transactionHistory) {
             var pDate = nowDate.plus({days: i - 30})
             datas[i] = {x: pDate.toISODate(), y: 201231 + (i * 31) + (i*i) + (i * 7927)  + (2 - (i % 4)) * 17397  }
         }
-        return data
+        return datas
     }
     //===========
 
 
 
-  if (transactionHistory.length === 0) {
-    return getDataFromLocalStorage('txHistoryData')
-  }
-  const data = transactionHistory.map(dataPoint => ({ x: dataPoint.date, y: dataPoint.number_of_transactions }))
+//   if (transactionHistory.length === 0) {
+//     return getDataFromLocalStorage('txHistoryData')
+//   }
+//   const data = transactionHistory.map(dataPoint => ({ x: dataPoint.date, y: dataPoint.number_of_transactions }))
 
-  // it should be empty value for tx history the current day
-  const prevDayStr = data[0].x
-  const prevDay = DateTime.fromISO(prevDayStr)
-  let curDay = prevDay.plus({ days: 1 })
-  curDay = curDay.toISODate()
-  data.unshift({ x: curDay, y: null })
+//   // it should be empty value for tx history the current day
+//   const prevDayStr = data[0].x
+//   const prevDay = DateTime.fromISO(prevDayStr)
+//   let curDay = prevDay.plus({ days: 1 })
+//   curDay = curDay.toISODate()
+//   data.unshift({ x: curDay, y: null })
 
-  setDataToLocalStorage('txHistoryData', data)
-  return data
+//   setDataToLocalStorage('txHistoryData', data)
+//   return data
 }
 
 function getMarketCapData (marketHistoryData, availableSupply) {
