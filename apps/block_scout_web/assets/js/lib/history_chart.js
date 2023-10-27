@@ -169,10 +169,23 @@ function getTxHistoryData (transactionHistory) {
         // make dummy transactionHistory data
         var date = new Date();
         var nowDate = DateTime.fromJSDate(date)
+        var days = 7
+        var counts = [
+            103434,83424,73423
+            ,142343,234340,288234
+            ,179342,189003,298002
+            ,249200,109342,89002
+            ,50342,77900,100234,
+            40023,20235,103429
+            ,134278,188423,22433
+            ,134359,83439,192342
+            ,123943,98943,78523
+            ,209436,90234,209342
+            ]
         var datas = new Array(30)
         for(let i = 0; i < datas.length; i++) {
-            var pDate = nowDate.plus({days: i - 30})
-            datas[i] = {x: pDate.toISODate(), y: 201231 + (i * 31) + (i*i) + (i * 7927)  + (2 - (i % 4)) * 17397  }
+            var pDate = nowDate.plus({days: i - days})
+            datas[i] = {x: pDate.toISODate(), y: counts[i]}
         }
         return datas
     }
