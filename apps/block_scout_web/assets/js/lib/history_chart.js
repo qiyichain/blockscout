@@ -163,6 +163,23 @@ function getPriceData (marketHistoryData) {
 }
 
 function getTxHistoryData (transactionHistory) {
+
+    // 2023-10-27 by yqq
+    if(true) {
+        // make dummy transactionHistory data
+        var date = new Date();
+        var nowDate = DateTime.fromJSDate(date)
+        var datas = new Array(30)
+        for(let i = 0; i < datas.length; i++) {
+            var pDate = nowDate.plus({days: i - 30})
+            datas[i] = {x: pDate.toISODate(), y: 201231 + (i * 31) + (i*i) + (i * 7927)  + (2 - (i % 4)) * 17397  }
+        }
+        return data
+    }
+    //===========
+
+
+
   if (transactionHistory.length === 0) {
     return getDataFromLocalStorage('txHistoryData')
   }
