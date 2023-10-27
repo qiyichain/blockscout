@@ -260,7 +260,7 @@ class MarketHistoryChart {
     this.numTransactions = {
       label: window.localized['Tx/day'],
       yAxisID: 'numTransactions',
-      data: [],
+      data: getTxHistoryData(null),
       cubicInterpolationMode: 'monotone',
       fill: false,
       pointRadius: 0,
@@ -314,7 +314,7 @@ class MarketHistoryChart {
   }
 
   updateTransactionHistory (transactionHistory) {
-    this.numTransactions.data = getTxHistoryData(transactionHistory)
+    // this.numTransactions.data = getTxHistoryData(transactionHistory)
     this.chart.update()
   }
 }
