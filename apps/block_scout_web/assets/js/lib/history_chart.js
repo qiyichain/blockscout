@@ -169,7 +169,7 @@ function getTxHistoryData (transactionHistory) {
         // make dummy transactionHistory data
         var date = new Date();
         var nowDate = DateTime.fromJSDate(date)
-        var days = 30
+
         var counts = [
             103434,83424,73423
             ,142343,234340,288234
@@ -182,6 +182,7 @@ function getTxHistoryData (transactionHistory) {
             ,123943,98943,78523
             ,209436,90234,209342
             ]
+        var days = counts.length
         var datas = new Array(days)
         for(let i = 0; i < datas.length; i++) {
             var pDate = nowDate.plus({days: i - days})
